@@ -5,7 +5,7 @@ description: Use whenever writing expository, technical, philosophical, analytic
 
 # Sober Prose
 
-Reduce the systematic bias that leads Claude to write prose that "lands well" — symmetric antitheses, aphoristic closings, punchy phrases, marketing-style constructions — instead of precise expository prose.
+Reduce the systematic bias that leads LLM models to write prose that "lands well" — symmetric antitheses, aphoristic closings, punchy phrases, marketing-style constructions — instead of precise expository prose.
 
 ## Why the bias exists
 
