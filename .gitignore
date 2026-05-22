@@ -1,2 +1,5 @@
 .prompts
 .vscode
+
+.claude/settings.local.json
+
