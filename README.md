@@ -10,3 +10,4 @@ Coleção de [Agent Skills](https://agentskills.io) — extensões baseadas em p
 | :---- | :---------------- | :---------------------- |
 | [prosa-sobria](prosa-sobria/) | Português | Suprime vieses retóricos herdados do treinamento por RLHF em respostas expositivas, técnicas, filosóficas ou analíticas. |
 | [sober-prose](sober-prose/) | English | Suppresses RLHF-induced rhetorical patterns in expository writing in favor of precision and epistemic hedges. |
+| [verbosity-reduction](verbosity-reduction/) | English | Detects and removes Verbosity Compensation — padding answers with compressible tokens instead of committing to the answer. |
