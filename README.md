@@ -1,2 +1,12 @@
 # skills
-Skills
+
+Coleção de [Agent Skills](https://agentskills.io) — extensões baseadas em prompts utilizáveis por qualquer agente de IA com suporte ao padrão Skill. Cada skill reside em seu próprio diretório com um `SKILL.md` como entrada e é acionada automaticamente pelo agente (com base na `description` da skill) ou diretamente via `/nome-da-skill`.
+
+> Collection of [Agent Skills](https://agentskills.io) — prompt-based extensions usable by any AI agent that supports the Skill standard. Each skill lives in its own directory with a `SKILL.md` entrypoint and is invoked either automatically by the agent (based on the skill's `description`) or directly via `/skill-name`.
+
+## Skills disponíveis / Available skills
+
+| Skill | Idioma / Language | Descrição / Description |
+| :---- | :---------------- | :---------------------- |
+| [prosa-sobria](prosa-sobria/) | Português | Suprime vieses retóricos herdados do treinamento por RLHF em respostas expositivas, técnicas, filosóficas ou analíticas. |
+| [sober-prose](sober-prose/) | English | Suppresses RLHF-induced rhetorical patterns in expository writing in favor of precision and epistemic hedges. |
