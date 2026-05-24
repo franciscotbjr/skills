@@ -16,6 +16,7 @@ The AI agent activates the skill automatically whenever a response could be comp
 - Tool-call arguments and structured output
 - Terse user requests (single-word or short questions)
 - Any response where the model feels the pull to "cover its bases" by adding volume
+- Expository prose the model writes or edits — aphoristic closing sentences that restate the substantive point with rhetorical flourish are VC (compressible without information loss) even though they "feel closed"
 - Triggered even when the user did not ask for concision — VC is most harmful when it goes unnoticed
 
 ## When it does not apply
