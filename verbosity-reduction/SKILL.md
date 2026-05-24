@@ -116,6 +116,15 @@ flourish.
 - See also sober-prose anti-pattern #1 (Aphoristic closing) — VC and sober-prose
   flag the same span from different angles here.
 
+**Antithesis as padding.** A specific form of VC in expository prose where the negative half of an antithetical construction ("X, not Y"; "not X, but Y") carries no information — it exists only to create rhetorical contrast. The positive claim already contains everything the reader needs; the negative half is ornamental.
+- Test: remove the negative half. Does the paragraph lose information? If not, it's VC.
+- Example: *"Error is information, not a failure to hide."* → *"Error is information."*
+- See also sober-prose anti-pattern #2 — VC flags the same span as compressible from a different angle.
+
+**Repeated-preposition enumeration.** Sequences like "por A, por B, por C" where "por A, B e C" suffices. Each repeated preposition is a token that carries no meaning beyond the first.
+- Example: *"especialização por domínio, por subdomínio, por estilo do usuário"* → *"especialização por domínio, subdomínio e estilo do usuário"*
+- Note: this is VC only when the prepositions are identical and consecutive. Varying prepositions ("por domínio, para uso, com estilo") are not compressible — each carries distinct information.
+
 ## Procedure
 
 1. Commit the answer token first, per the primary move above. Open with the

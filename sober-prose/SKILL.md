@@ -15,7 +15,15 @@ RLHF training rewards text that sounds satisfying to a human evaluator. This pro
 
 **1. Aphoristic closing.** The "punchy phrase" that closes a paragraph or response. Symptom: after the last relevant piece of information, there is still a sentence that summarizes with rhetorical effect rather than adding content. Fix: stop at the substantive point. Tolerate endings that feel weak.
 
-**2. "X is not just Y, it's Z" construction.** Creates a rhetorical progression that implies insight where there is often only reformulation. Variants to avoid: "more than X, it's Y"; "it's not about X, but Y"; "X goes beyond Y."
+One subtype worth flagging separately is the **prescriptive/admonitory closing** — a final sentence that delivers a rule, command, or judgment in imperative or deontic mode (*deve ser rejeitada*, *sem comprometer*, *não é tolerado*). It often follows a definition that already carries the implicit criterion, making the prescriptive tag redundant. Test: remove the closing sentence. If the criterion it states is already implied by the preceding definition, it's flourish. If the criterion is new, integrate it into the definition earlier in the paragraph rather than appending it as a verdict.
+
+**2. "X is not just Y, it's Z" construction.** Creates a rhetorical progression that implies insight where there is often only reformulation. Sub-variants to recognize and remove:
+
+- **"X, not Y"** (appositive negation at end of clause): *"It's an architectural requirement, not a personality trait."* → *"It's an architectural requirement."*
+- **"Not with X, but Y"** (adverbial negation + contrast): *"Not with a generic confidence score, but by mapping topologically."* → *"By mapping topologically."*
+- **"X is not Y — it's Z"** (dash + antithesis): *"Prediction isn't confidence score — it's a measurable claim."* → *"Prediction is a measurable claim about what will be observed."*
+
+All three share the same core defect: they construct a contrast scaffold to deliver the positive claim, and the negative half is padding. Remove the negative half; the positive claim stands on its own.
 
 **3. Ternary parallelisms.** Three items in series with the same syntactic form when two or four would suffice. The number three is rhetorically satisfying, rarely conceptually necessary.
 
@@ -43,7 +51,7 @@ RLHF training rewards text that sounds satisfying to a human evaluator. This pro
 - **Stop where the information stops.** No flourish.
 - **Functional adjectives, not emotive ones.** "Reduces latency by 30%" instead of "transformative for performance."
 - **Lists only when the content is genuinely parallel.** Otherwise, prose.
-- **Prefer removal over reformulation when the flourish duplicates content.** If the aphoristic closing, antithesis, or hype phrase repeats an idea already carried by the surrounding text, delete it. Reformulating to preserve every line keeps the wordcount up without preserving information.
+- **Prefer removal over reformulation when the flourish duplicates content.** If the aphoristic closing, antithesis, prescriptive verdict, or hype phrase repeats an idea already carried by the surrounding text, delete it. Reformulating to preserve every line keeps the wordcount up without preserving information.
 
 ## Before / after
 
@@ -74,7 +82,7 @@ RLHF training rewards text that sounds satisfying to a human evaluator. This pro
 Before finalizing a response, review:
 
 1. Does the last sentence end at the substantive point, or is it a flourish?
-2. Is there any "not just X, it's Y" construction or variant?
+2. Is there any "not just X, it's Y" construction, or its sub-variants ("X, not Y"; "not with X, but Y"; "X is not Y — it's Z")?
 3. Are there emphatic adjectives with no functional content?
 4. Are the ternary parallelisms necessary or merely rhythmic?
 5. Where there is uncertainty, is it signaled?
@@ -88,7 +96,7 @@ The first application of these rules typically leaves residue. Three categories 
 
 - Antitheses that "feel informationally necessary" but whose information appears elsewhere (e.g., a vector-vs-scalar antithesis sitting right next to an enumeration that already implies the vector).
 - Sentence-fragment antitheses (anti-pattern #10) and bare jargon (anti-pattern #11) — these survive the first pass because they look like terse technical writing.
-- Aphoristic closings to short paragraphs — they survive because they feel like argumentative bridges. Reread the final sentence of every paragraph and ask: would the paragraph lose information if this sentence were deleted? If not, delete.
+- Aphoristic closings (including the prescriptive/admonitory subtype) to short paragraphs — they survive because they feel like argumentative bridges. Reread the final sentence of every paragraph and ask: would the paragraph lose information if this sentence were deleted? If not, delete.
 
 If working on a document the user is iterating with you, expect to be asked to remove residual instances one-by-one. Doing the second pass yourself, before showing the result, avoids that.
 
