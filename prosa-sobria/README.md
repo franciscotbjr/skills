@@ -14,6 +14,7 @@ O Agente de IA ativa a skill automaticamente quando a conversa envolve escrita e
 
 - Respostas expositivas, técnicas, filosóficas ou analíticas
 - Qualquer resposta substantiva onde vieses retóricos prejudicariam a precisão
+- Edição iterativa de documentos que o usuário está revisando parágrafo por parágrafo — a skill inclui uma rotina de "segunda passada" para fechamentos aforísticos residuais, fragmentos de antítese e jargão cru que a primeira passada tipicamente deixa para trás
 
 ## Quando não se aplica
 

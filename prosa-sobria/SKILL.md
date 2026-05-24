@@ -31,6 +31,10 @@ O treinamento por feedback humano (RLHF) recompensa texto que soa satisfatório 
 
 **9. Verbos de exagero.** "Desbloqueia", "revoluciona", "redefine", "transforma". Quase sempre substituíveis por verbos mais precisos.
 
+**10. Fragmentos de antítese.** Versões em fragmento de frase da estrutura "X não é Y", sem verbo ou artigo, que imitam o ritmo da antítese sem formar uma oração completa. Exemplo: *"A condição a executar, não problema a esconder."* São duplamente ruins: o padrão retórico do #7 mais a incompletude gramatical que sinaliza que quem escreve estava buscando cadência em vez de significado. Correção: completar a frase ou deletá-la. Se as frases ao redor já carregam a ideia, deletar.
+
+**11. Jargão cru como âncora definicional.** Usar um termo técnico ou filosófico como sujeito de uma frase definicional sem antes destrinchar o que o termo significa neste contexto. Exemplo: *"Explicabilidade é consequência direta de P5, não um princípio independente."* O termo "explicabilidade" carrega peso especializado suficiente para que o leitor não consiga acompanhar o resto da frase sem que ele seja definido antes. Correção: destrinchar o termo em prosa simples (uma oração costuma bastar) antes de usá-lo como âncora definicional.
+
 ## O que fazer em vez
 
 - **Períodos mais longos quando a ideia exige.** Subordinação, qualificação, parênteses genuínos.
@@ -39,6 +43,7 @@ O treinamento por feedback humano (RLHF) recompensa texto que soa satisfatório 
 - **Terminar onde a informação termina.** Sem arremate.
 - **Adjetivos funcionais, não emotivos.** "Reduz latência em 30%" em vez de "transformador para performance".
 - **Listas só quando o conteúdo é genuinamente paralelo.** Caso contrário, prosa.
+- **Preferir remoção à reformulação quando o floreio duplica conteúdo.** Se o fechamento aforístico, a antítese ou a frase de exagero repete uma ideia já presente no texto ao redor, deletar. Reformular para preservar cada linha mantém o volume de palavras sem preservar informação.
 
 ## Antes / depois
 
@@ -76,6 +81,16 @@ Antes de finalizar uma resposta, revisar:
 6. Algum travessão está sendo usado para efeito em vez de parêntese?
 
 Se a resposta a qualquer item indica viés retórico, reformular antes de enviar.
+
+## Segunda passada
+
+A primeira aplicação destas regras tipicamente deixa resíduos. Três categorias sobrevivem à primeira passada e precisam de uma segunda varredura focada:
+
+- Antíteses que "parecem informacionalmente necessárias" mas cuja informação aparece em outro lugar (ex.: uma antítese vetor-vs-escalar ao lado de uma enumeração que já implica o vetor).
+- Fragmentos de antítese (anti-padrão #10) e jargão cru (anti-padrão #11) — estes sobrevivem à primeira passada porque parecem prosa técnica enxuta.
+- Fechamentos aforísticos em parágrafos curtos — sobrevivem porque parecem pontes argumentativas. Releia a última frase de cada parágrafo e pergunte: o parágrafo perderia informação se esta frase fosse deletada? Se não, deletar.
+
+Se estiver trabalhando em um documento que o usuário está iterando com você, espere que ele peça para remover instâncias residuais uma a uma. Fazer a segunda passada você mesmo, antes de mostrar o resultado, evita isso.
 
 ## Quando NÃO aplicar
 
