@@ -102,6 +102,20 @@ clause, a table for two values.
 - Fix: prose for prose-sized answers; reserve lists and tables for genuinely
   multi-item or multi-dimensional content.
 
+**Bonus — VC in expository prose.** The five types above are framed around
+answer-shaped responses (QA, extraction, classification). The same definition —
+*compressible without information loss* — applies to expository writing the
+model produces or edits. The most common VC instance in expository prose is an
+aphoristic closing sentence that restates the substantive point with rhetorical
+flourish.
+- Example, removed during a recent editing session: *"It is this second half
+  that separates honest explanation from performance of competence."* The
+  sentence carries no information that the preceding sentence (*"explaining is,
+  in the same gesture, declaring what one knows and indicating where clarity
+  ends"*) does not already carry; it survives because it "feels closed." Delete.
+- See also sober-prose anti-pattern #1 (Aphoristic closing) — VC and sober-prose
+  flag the same span from different angles here.
+
 ## Procedure
 
 1. Commit the answer token first, per the primary move above. Open with the

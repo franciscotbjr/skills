@@ -14,6 +14,7 @@ The AI agent activates the skill automatically when the conversation involves ex
 
 - Expository, technical, philosophical, or analytical responses
 - Any substantive response where rhetorical bias would undermine precision
+- Iterative editing of documents the user is reviewing paragraph by paragraph — the skill includes a "second pass" routine for residual aphoristic closings, sentence-fragment antitheses, and bare jargon that the first pass typically leaves behind
 
 ## When it does not apply
 

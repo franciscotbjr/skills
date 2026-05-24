@@ -31,6 +31,10 @@ RLHF training rewards text that sounds satisfying to a human evaluator. This pro
 
 **9. Hype verbs.** "Unlocks," "revolutionizes," "redefines," "transforms." Almost always replaceable with more precise verbs.
 
+**10. Antithesis fragments.** Sentence-fragment versions of the "X is not Y" structure, lacking a verb or article, that mimic the antithesis rhythm without forming a complete sentence. Example: *"The condition to perform, not problem to hide."* These are doubly bad: the rhetorical pattern of #7 plus grammatical incompleteness that signals the writer was reaching for cadence rather than meaning. Fix: complete the sentence or delete it. If the surrounding sentences already carry the idea, delete.
+
+**11. Bare jargon as definitional anchor.** Using a technical or philosophical term as the subject of a definitional sentence without first unpacking what the term means in this context. Example: *"Explainability is a direct consequence of P5, not an independent principle."* The term "explainability" carries enough specialized weight that the reader cannot follow the rest of the sentence without it being defined first. Fix: unpack the term in plain prose (one clause is usually enough) before using it as a definitional anchor.
+
 ## What to do instead
 
 - **Longer sentences when the idea requires it.** Subordination, qualification, genuine parentheticals.
@@ -39,6 +43,7 @@ RLHF training rewards text that sounds satisfying to a human evaluator. This pro
 - **Stop where the information stops.** No flourish.
 - **Functional adjectives, not emotive ones.** "Reduces latency by 30%" instead of "transformative for performance."
 - **Lists only when the content is genuinely parallel.** Otherwise, prose.
+- **Prefer removal over reformulation when the flourish duplicates content.** If the aphoristic closing, antithesis, or hype phrase repeats an idea already carried by the surrounding text, delete it. Reformulating to preserve every line keeps the wordcount up without preserving information.
 
 ## Before / after
 
@@ -76,6 +81,16 @@ Before finalizing a response, review:
 6. Is any dash being used for effect rather than as a parenthetical?
 
 If the answer to any item indicates rhetorical bias, revise before sending.
+
+## Second pass
+
+The first application of these rules typically leaves residue. Three categories survive a first pass and need a focused second sweep:
+
+- Antitheses that "feel informationally necessary" but whose information appears elsewhere (e.g., a vector-vs-scalar antithesis sitting right next to an enumeration that already implies the vector).
+- Sentence-fragment antitheses (anti-pattern #10) and bare jargon (anti-pattern #11) — these survive the first pass because they look like terse technical writing.
+- Aphoristic closings to short paragraphs — they survive because they feel like argumentative bridges. Reread the final sentence of every paragraph and ask: would the paragraph lose information if this sentence were deleted? If not, delete.
+
+If working on a document the user is iterating with you, expect to be asked to remove residual instances one-by-one. Doing the second pass yourself, before showing the result, avoids that.
 
 ## When NOT to apply
 
