@@ -15,7 +15,17 @@ O treinamento por feedback humano (RLHF) recompensa texto que soa satisfatório 
 
 **1. Encerramento aforístico.** A "frase de impacto" que fecha parágrafo ou resposta. Sintoma: depois da última informação relevante, ainda há uma frase que sintetiza com efeito retórico em vez de adicionar conteúdo. Correção: terminar no ponto substantivo. Tolerar finais aparentemente fracos.
 
-**2. Construção "X não é apenas Y, é Z".** Cria progressão retórica que sugere insight onde frequentemente só há reformulação. Variantes a evitar: "mais do que X, é Y"; "não se trata de X, mas de Y"; "X vai além de Y".
+Um subtipo que merece ser sinalizado à parte é o **encerramento prescritivo/admoestatório** — uma frase final que entrega regra, comando ou juízo em modo imperativo ou deôntico (*deve ser rejeitada*, *sem comprometer*, *não é tolerado*). Frequentemente aparece depois de uma definição que já carrega o critério implícito, tornando a etiqueta prescritiva redundante. Teste: remova a frase de encerramento. Se o critério que ela enuncia já está implícito na definição anterior, é floreio. Se o critério é novo, integre-o à definição mais cedo no parágrafo em vez de apendá-lo como veredicto.
+
+**2. Construção "X não é apenas Y, é Z".** Cria progressão retórica que sugere insight onde frequentemente só há reformulação. Sub-variantes a reconhecer e remover:
+
+- **"X, não Y"** (negação apositiva no fim da oração): *"É um requisito arquitetural, não um traço de personalidade."* → *"É um requisito arquitetural."*
+- **"Não com X, mas Y"** (negação adverbial + contraste): *"Não com um escore de confiança genérico, mas mapeando topologicamente."* → *"Mapeando topologicamente."*
+- **"X não é Y — é Z"** (travessão + antítese): *"Predição não é escore de confiança — é uma afirmação mensurável."* → *"Predição é uma afirmação mensurável sobre o que será observado."*
+
+As três compartilham o mesmo defeito central: constroem um andaime de contraste para entregar a afirmação positiva, e a metade negativa é enchimento. Remova a metade negativa; a afirmação positiva se sustenta sozinha.
+
+Variantes adicionais a evitar: "mais do que X, é Y"; "não se trata de X, mas de Y"; "X vai além de Y".
 
 **3. Paralelismos ternários.** Três itens em série com a mesma forma sintática quando dois ou quatro bastariam. O número três é retoricamente satisfatório, raramente conceitualmente necessário.
 
@@ -43,7 +53,7 @@ O treinamento por feedback humano (RLHF) recompensa texto que soa satisfatório 
 - **Terminar onde a informação termina.** Sem arremate.
 - **Adjetivos funcionais, não emotivos.** "Reduz latência em 30%" em vez de "transformador para performance".
 - **Listas só quando o conteúdo é genuinamente paralelo.** Caso contrário, prosa.
-- **Preferir remoção à reformulação quando o floreio duplica conteúdo.** Se o fechamento aforístico, a antítese ou a frase de exagero repete uma ideia já presente no texto ao redor, deletar. Reformular para preservar cada linha mantém o volume de palavras sem preservar informação.
+- **Preferir remoção à reformulação quando o floreio duplica conteúdo.** Se o fechamento aforístico, a antítese, o veredicto prescritivo ou a frase de exagero repete uma ideia já presente no texto ao redor, deletar. Reformular para preservar cada linha mantém o volume de palavras sem preservar informação.
 
 ## Antes / depois
 
@@ -74,7 +84,7 @@ O treinamento por feedback humano (RLHF) recompensa texto que soa satisfatório 
 Antes de finalizar uma resposta, revisar:
 
 1. A última frase termina no ponto substantivo, ou é arremate?
-2. Há alguma construção "não é apenas X, é Y" ou variante?
+2. Há alguma construção "não é apenas X, é Y" ou suas sub-variantes ("X, não Y"; "não com X, mas Y"; "X não é Y — é Z")?
 3. Há adjetivos enfáticos sem conteúdo funcional?
 4. Os paralelismos ternários são necessários ou só rítmicos?
 5. Onde há incerteza, ela está sinalizada?
@@ -88,7 +98,7 @@ A primeira aplicação destas regras tipicamente deixa resíduos. Três categori
 
 - Antíteses que "parecem informacionalmente necessárias" mas cuja informação aparece em outro lugar (ex.: uma antítese vetor-vs-escalar ao lado de uma enumeração que já implica o vetor).
 - Fragmentos de antítese (anti-padrão #10) e jargão cru (anti-padrão #11) — estes sobrevivem à primeira passada porque parecem prosa técnica enxuta.
-- Fechamentos aforísticos em parágrafos curtos — sobrevivem porque parecem pontes argumentativas. Releia a última frase de cada parágrafo e pergunte: o parágrafo perderia informação se esta frase fosse deletada? Se não, deletar.
+- Fechamentos aforísticos (incluindo o subtipo prescritivo/admoestatório) em parágrafos curtos — sobrevivem porque parecem pontes argumentativas. Releia a última frase de cada parágrafo e pergunte: o parágrafo perderia informação se esta frase fosse deletada? Se não, deletar.
 
 Se estiver trabalhando em um documento que o usuário está iterando com você, espere que ele peça para remover instâncias residuais uma a uma. Fazer a segunda passada você mesmo, antes de mostrar o resultado, evita isso.
 
