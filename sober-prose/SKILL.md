@@ -43,6 +43,10 @@ All three share the same core defect: they construct a contrast scaffold to deli
 
 **11. Bare jargon as definitional anchor.** Using a technical or philosophical term as the subject of a definitional sentence without first unpacking what the term means in this context. Example: *"Explainability is a direct consequence of P5, not an independent principle."* The term "explainability" carries enough specialized weight that the reader cannot follow the rest of the sentence without it being defined first. Fix: unpack the term in plain prose (one clause is usually enough) before using it as a definitional anchor.
 
+**12. Definitional metaphor from a foreign domain.** A figure of speech borrowed from another field (statistics, geology, mechanics, biology) placed in a definitional position. Different from #11 — the term is not bare; it is *evocative*, and that is precisely the problem: the reader imports the inferential structure of the source domain along with the image. Example: *"F is the multi-level vector: outliers at different temporal scales."* "Outlier" belongs to statistics, where it means noise to discard; but F is signal — the prediction-observation gap the system needs to *use*, not eliminate. The metaphor pulls the reader toward the wrong frame before the operational definition has a chance to land. Fix: replace the figure with the operational description (what the concept *is*) rather than the figurative one (what it *resembles*). Test: at every definitional position, ask whether the metaphor's source domain has its own established logic; if yes, check whether that logic matches the concept being defined; if not, swap.
+
+**13. Scare quotes as typographic hedging.** Double quotation marks around a word to signal *"I'm using this term loosely."* Three defects: the reader has to guess how loose the use is; it signals the author's discomfort with the chosen word rather than commitment to it; and it rarely survives the test *"if I replaced this with a more precise word, would I still need the quotes?"* — almost always no. Example: *"modify the 'world' to confirm predictions"* — the quotes hedge *world* because the word felt too broad for the agent↔environment context. Fix: either find the precise word that does not need quotes (*the environment*), or commit to the term without the typographic hedge. Not to be confused with legitimate uses of quotation marks: citation, use-mention (*the word "world" has five letters*), proper names of works, or first occurrence of a technical term about to be defined in the next clause.
+
 ## What to do instead
 
 - **Longer sentences when the idea requires it.** Subordination, qualification, genuine parentheticals.
@@ -51,6 +55,7 @@ All three share the same core defect: they construct a contrast scaffold to deli
 - **Stop where the information stops.** No flourish.
 - **Functional adjectives, not emotive ones.** "Reduces latency by 30%" instead of "transformative for performance."
 - **Lists only when the content is genuinely parallel.** Otherwise, prose.
+- **Concrete example anchoring an abstract claim.** When the claim states a mechanism abstractly, anchor it with a specific instance introduced by *"for example, ..."* / *"por exemplo, ..."*. This is the one place this skill recommends *adding* rather than cutting. Distinguish from VC anti-pattern #4 (verbose detail): a valid example shows the mechanism in action — a specific case the reader would not derive from the abstract claim alone; an invalid example paraphrases the claim in other words. Test: after writing the abstract operational claim, ask what concrete case exemplifies it. If the answer is a specific case showing the mechanism, add. If the answer paraphrases the claim, do not.
 - **Prefer removal over reformulation when the flourish duplicates content.** If the aphoristic closing, antithesis, prescriptive verdict, or hype phrase repeats an idea already carried by the surrounding text, delete it. Reformulating to preserve every line keeps the wordcount up without preserving information.
 
 ## Before / after
@@ -87,6 +92,8 @@ Before finalizing a response, review:
 4. Are the ternary parallelisms necessary or merely rhythmic?
 5. Where there is uncertainty, is it signaled?
 6. Is any dash being used for effect rather than as a parenthetical?
+7. Does any definitional position carry a metaphor whose source domain imports the wrong inferential frame? (anti-pattern #12)
+8. Are there scare quotes around a word that should either be replaced with a more precise term or committed to without typographic hedging? (anti-pattern #13)
 
 If the answer to any item indicates rhetorical bias, revise before sending.
 
@@ -96,6 +103,8 @@ The first application of these rules typically leaves residue. Three categories 
 
 - Antitheses that "feel informationally necessary" but whose information appears elsewhere (e.g., a vector-vs-scalar antithesis sitting right next to an enumeration that already implies the vector).
 - Sentence-fragment antitheses (anti-pattern #10) and bare jargon (anti-pattern #11) — these survive the first pass because they look like terse technical writing.
+- Definitional metaphors borrowed from another domain (anti-pattern #12) — they survive because the figure feels evocative and condenses the idea into a single image; the imported inferential frame misleads quietly before the reader catches it.
+- Scare quotes (anti-pattern #13) — they survive because they look like honest hedging about an imprecise word; in fact they push the work of disambiguation onto the reader, who has to guess what the quotes are protesting.
 - Aphoristic closings (including the prescriptive/admonitory subtype) to short paragraphs — they survive because they feel like argumentative bridges. Reread the final sentence of every paragraph and ask: would the paragraph lose information if this sentence were deleted? If not, delete.
 
 If working on a document the user is iterating with you, expect to be asked to remove residual instances one-by-one. Doing the second pass yourself, before showing the result, avoids that.

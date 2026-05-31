@@ -13,7 +13,7 @@
 
 ## Active Work
 
-_(nenhuma — aguardando a primeira tarefa/iteração)_
+_(nenhuma — aguardando a próxima tarefa/iteração)_
 
 ## Open Session
 
@@ -23,7 +23,7 @@ _(nenhuma sessão aberta)_
 
 | # | Nome | Tipo | Concluída em |
 | - | ---- | ---- | ------------ |
-| — | —    | —    | —            |
+| 1 | sync-source-skills | Import | 2026-05-31 |
 
 ## Key Decisions
 
@@ -52,4 +52,4 @@ _(nenhuma sessão aberta)_
 
 | ID | Nome | Tipo | Status | Arquivo |
 | -- | ---- | ---- | ------ | ------- |
-| —  | —    | —    | —      | —       |
+| 1  | sync-source-skills | Import | completed | [001-sync-source-skills.md](history/001-sync-source-skills.md) |

@@ -27,7 +27,7 @@ A skill é ativada automaticamente sempre que a resposta em curso for produzida 
 
 ## Ideia central
 
-O modelo, treinado predominantemente em inglês, tende a gerar pt-BR que é gramatical mas estruturalmente anglicizado. Os sintomas — artigos definidos omitidos, conectivos colapsados em *mas* e *então*, regência verbal calcada, sujeitos pronominais redundantes — não comprometem a compreensão literal, mas tornam o texto reconhecidamente "traduzido". A skill atua como anteparo: lista as dez categorias mais frequentes de drift — incluindo artigos definidos, conectivos, regência, clíticos, subjuntivo, crase, pro-drop, estrangeirismos lexicais, calques semânticos e títulos sem sujeito — com pares bilíngues EN → pt-BR para cada uma e uma checklist pré-envio.
+O modelo, treinado predominantemente em inglês, tende a gerar pt-BR que é gramatical mas estruturalmente anglicizado. Os sintomas — artigos definidos omitidos, conectivos colapsados em *mas* e *então*, regência verbal calcada, sujeitos pronominais redundantes — não comprometem a compreensão literal, mas tornam o texto reconhecidamente "traduzido". A skill atua como anteparo: lista as onze categorias mais frequentes de drift — incluindo artigos definidos, conectivos, regência, clíticos, subjuntivo, crase, pro-drop, estrangeirismos lexicais, calques semânticos, títulos sem sujeito e barra-como-ou — com pares bilíngues EN → pt-BR para cada uma e uma checklist pré-envio.
 
 ## Fontes
 
