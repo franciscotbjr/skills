@@ -8,6 +8,7 @@ Coleção de [Agent Skills](https://agentskills.io) — extensões baseadas em p
 
 | Skill | Idioma / Language | Descrição / Description |
 | :---- | :---------------- | :---------------------- |
+| [prosa-completa](prosa-completa/) | Português | Skill agregadora que orquestra sober-prose, verbosity-reduction e pt-br-fullness em uma única passada, com ordem canônica e resolução de conflitos. |
 | [prosa-sobria](prosa-sobria/) | Português | Suprime vieses retóricos herdados do treinamento por RLHF em respostas expositivas, técnicas, filosóficas ou analíticas. |
 | [pt-br-fullness](pt-br-fullness/) | Português | Preserva elementos morfossintáticos e coesivos do pt-BR (artigos, conectivos, regência, clíticos, subjuntivo, crase, pro-drop) que a geração default tende a deixar cair. |
 | [sober-prose](sober-prose/) | English | Suppresses RLHF-induced rhetorical patterns in expository writing in favor of precision and epistemic hedges. |

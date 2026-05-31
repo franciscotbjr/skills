@@ -207,6 +207,20 @@ Exemplos:
 
 Regra: títulos e aberturas de parágrafo com verbo na 3ª pessoa devem explicitar o sujeito, exceto quando o sujeito é o tema único e inequívoco de toda a seção e o título está imediatamente sob o cabeçalho que o nomeia. Na dúvida, inclua o sujeito.
 
+### 11. Barra-como-ou (`/`) em prosa expositiva
+
+A barra `/` usada para juntar dois termos relacionados em prosa corrente (*crenças/definições*, *observações/dados*, *código/teste*, *espec/implementação*) é atalho tipográfico de origem anglicizada. Em prosa expositiva pt-BR, a forma idiomática é a conjunção explícita (*crenças e definições*, *observações e dados*), e, em registros formais, com restauração do artigo definido da lista (*as crenças e as definições*). O custo da barra é duplo: rompe o tecido prosódico do português e devora os artigos que §1 desta skill recomenda preservar.
+
+- EN: *update beliefs/definitions based on observations/data*
+- drift: *atualizar crenças/definições com base em observações/dados*
+- pleno: *atualizar as crenças e as definições à luz das observações e dos dados*
+
+**Quando preservar a barra**: identificadores técnicos (`Producer/Consumer`, `read/write`, `dev/prod`), nomes próprios (`TCP/IP`, `I/O`), tabelas, listas de keywords, conteúdo de configuração ou de código, glossários de equivalência inter-linguística (*EN: foo / pt-BR: bar*). **Quando substituir**: prosa expositiva corrente em pt-BR onde a barra une conceitos que o autor escreveria por extenso se estivesse lendo o trecho em voz alta.
+
+**Teste sonoro**: ler em voz alta. Se a barra obriga uma pausa esquisita ("crenças barra definições") ou se o leitor a verbaliza como continuum forçado ("crenças ou definições" dito sem hesitação), é forte sinal de que a forma natural pediria conjunção explícita.
+
+**Não confundir com**: a barra usada para indicar alternativa **legítima** num único termo composto (`he/she`, `s/he`, `e-mail/email`) — aí a barra é parte da grafia, não substituto da conjunção. Também não confundir com a barra inversa (`\`) ou com a barra em URLs, paths e datas — usos puramente técnicos.
+
 ## O que fazer em vez disso
 
 Diretrizes positivas a seguir durante a geração em pt-BR:
@@ -221,6 +235,7 @@ Diretrizes positivas a seguir durante a geração em pt-BR:
 - Substitua palavras inglesas pelo equivalente pt-BR onde houver termo corrente no idioma (*gap* → *lacuna*, *confidence* → *grau de confiança*, *claim* → *afirmação*); preserve estrangeirismos apenas quando forem o termo canônico do domínio sem equivalente.
 - Identifique calques semânticos — expressões gramaticalmente corretas mas sem circulação independente no idioma — e as reescreva com estrutura idiomática pt-BR ou as defina na primeira ocorrência.
 - Em títulos e aberturas de parágrafo, explicite o sujeito de verbos na 3ª pessoa quando a desinência verbal não o desambigua.
+- Em prosa expositiva, substitua a barra `/` que une dois termos relacionados (*crenças/definições*, *observações/dados*) pela conjunção explícita, restaurando o artigo definido da lista quando o registro pedir (*as crenças e as definições*). Preserve a barra em identificadores técnicos, nomes próprios e usos não-prosais.
 
 ## Auto-check antes de enviar
 
@@ -236,6 +251,7 @@ Antes de finalizar uma resposta em pt-BR, percorra a checklist:
 8. Há palavras em inglês (*gap*, *claim*, *confidence*, *brief*, *decay*, *tool*) que poderiam ser substituídas pelo equivalente pt-BR corrente?
 9. Há expressões que, embora gramaticalmente corretas, são traduções literais sem circulação independente no idioma (*trabalho de conhecimento*, *zelo executivo*)?
 10. Títulos e aberturas de parágrafo com verbo na 3ª pessoa têm sujeito explícito quando a desinência não o desambigua?
+11. Há barras `/` em prosa expositiva unindo conceitos relacionados (*crenças/definições*, *observações/dados*) que pediriam conjunção explícita em pt-BR, e o caso não é identificador técnico, nome próprio nem alternativa legítima de grafia?
 
 Se qualquer item da checklist apontar drift, revise antes de enviar.
 

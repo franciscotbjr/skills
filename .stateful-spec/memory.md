@@ -13,7 +13,7 @@
 
 ## Active Work
 
-_(nenhuma — aguardando a primeira tarefa/iteração)_
+_(nenhuma — aguardando a próxima tarefa/iteração)_
 
 ## Open Session
 
@@ -23,7 +23,7 @@ _(nenhuma sessão aberta)_
 
 | # | Nome | Tipo | Concluída em |
 | - | ---- | ---- | ------------ |
-| — | —    | —    | —            |
+| 1 | sync-source-skills | Import | 2026-05-31 |
 
 ## Key Decisions
 
@@ -37,6 +37,14 @@ _(nenhuma sessão aberta)_
 - Metodologia completa **referenciada** no upstream
   (github.com/franciscotbjr/stateful-spec); o ciclo adaptado vive no
   `project-definition.md`. Não há `.stateful-spec/methodology/` local.
+- Skills do vault pessoal (`D:\franciscotbjr\Documents\Explorações\.claude\skills`)
+  são a fonte canônica de atualizações das skills; o repo público recebe
+  importações periódicas (2026-05-31).
+- **`prosa-completa`** (PT) é skill agregadora das três skills de qualidade de
+  prosa; não as substitui — é atalho de invocação combinada com resolução de
+  conflitos entre elas (2026-05-31).
+- **`prosa-sobria`** permanece como contraparte PT da `sober-prose`; a agregação
+  fica na `prosa-completa`, não nela (2026-05-31).
 
 ## Constraints & Reminders
 
@@ -52,4 +60,4 @@ _(nenhuma sessão aberta)_
 
 | ID | Nome | Tipo | Status | Arquivo |
 | -- | ---- | ---- | ------ | ------- |
-| —  | —    | —    | —      | —       |
+| 1  | sync-source-skills | Import | completed | [001-sync-source-skills.md](history/001-sync-source-skills.md) |
