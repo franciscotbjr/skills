@@ -2,6 +2,33 @@
 
 Zero-code repository of [Agent Skills](https://agentskills.io) — prompt extensions in Markdown. No build, test, lint, or typecheck.
 
+## Stateful Spec
+
+Este repositório adota a metodologia [stateful-spec](https://github.com/franciscotbjr/stateful-spec)
+(adaptada ao domínio de autoria de skills) para manter estado e contexto entre
+sessões e agentes.
+
+- **Leia primeiro:** [`.stateful-spec/memory.md`](.stateful-spec/memory.md) — estado
+  atual, trabalho ativo, decisões e restrições.
+- **Convenções e ciclo:** [`.stateful-spec/project-definition.md`](.stateful-spec/project-definition.md)
+  — identidade, Quality Gates (convenções) e o ciclo de fases adaptado
+  (Analisar → Planejar → Especificar → Redigir → Verificar).
+- **Metodologia completa:** referenciada no upstream (não copiada para o repo).
+
+### Operações de sessão
+
+Os corpos canônicos vivem em `.stateful-spec/operations/`; os comandos nativos
+abaixo são wrappers finos (Claude Code e OpenCode, mesma sintaxe `/<nome>`):
+
+| Comando | O que faz |
+| ------- | --------- |
+| `/start-session`  | Inicia a sessão carregando o estado do projeto |
+| `/resume-session` | Retoma o trabalho com o contexto persistido |
+| `/save-session`   | Salva o progresso em `memory.md` e na iteração ativa |
+| `/end-session`    | Encerra a sessão, persistindo o estado |
+
+Iterações de trabalho são rastreadas em `.stateful-spec/history/NNN-<nome>.md`.
+
 ## Skill structure
 
 Each skill is a directory containing exactly two files:
