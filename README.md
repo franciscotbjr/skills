@@ -13,3 +13,4 @@ Coleção de [Agent Skills](https://agentskills.io) — extensões baseadas em p
 | [pt-br-fullness](pt-br-fullness/) | Português | Preserva elementos morfossintáticos e coesivos do pt-BR (artigos, conectivos, regência, clíticos, subjuntivo, crase, pro-drop) que a geração default tende a deixar cair. |
 | [sober-prose](sober-prose/) | English | Suppresses RLHF-induced rhetorical patterns in expository writing in favor of precision and epistemic hedges. |
 | [verbosity-reduction](verbosity-reduction/) | English | Detects and removes Verbosity Compensation — padding answers with compressible tokens instead of committing to the answer. |
+| [methodological-rigor](methodological-rigor/) | English | Critical audit of argumentation, methodology, and epistemic robustness — questions unstated premises, unverified claims, structural biases, and circular reasoning. |
