@@ -24,6 +24,7 @@ _(nenhuma sessão aberta)_
 | # | Nome | Tipo | Concluída em |
 | - | ---- | ---- | ------------ |
 | 1 | sync-source-skills | Import | 2026-05-31 |
+| 2 | include-methodological-rigor | Include | 2026-05-31 |
 
 ## Key Decisions
 
@@ -45,6 +46,11 @@ _(nenhuma sessão aberta)_
   conflitos entre elas (2026-05-31).
 - **`prosa-sobria`** permanece como contraparte PT da `sober-prose`; a agregação
   fica na `prosa-completa`, não nela (2026-05-31).
+- **`methodological-rigor`** (EN): skill de auditoria crítica de argumentação,
+  metodologia e robustez epistêmica. Aplica persona de Crítico Implacável que
+  questiona premissas não declaradas, vieses estruturais, circular reasoning,
+  hipocrisia epistêmica e normativa. Complementar às skills de prosa — o escopo
+  é a estrutura do argumento, não a forma da expressão (2026-05-31).
 
 ## Constraints & Reminders
 
@@ -61,3 +67,4 @@ _(nenhuma sessão aberta)_
 | ID | Nome | Tipo | Status | Arquivo |
 | -- | ---- | ---- | ------ | ------- |
 | 1  | sync-source-skills | Import | completed | [001-sync-source-skills.md](history/001-sync-source-skills.md) |
+| 2  | include-methodological-rigor | Include | completed | [002-include-methodological-rigor.md](history/002-include-methodological-rigor.md) |
