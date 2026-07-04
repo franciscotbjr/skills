@@ -15,10 +15,14 @@ informação.
    Session (se houver), progresso da iteração aberta, Constraints e conclusões
    recentes.
 
-3. **Perguntar o próximo passo.** Ofereça opções contextuais: continuar a iteração
+3. **Triar a caixa de entrada.** Varredura rápida de `.stateful-spec/intake/` por
+   itens `ready` ainda não triados; promova a `O-NNN` em `.stateful-spec/backlog.md`
+   ou descarte, e marque como `triaged`. Idempotente entre retomadas.
+
+4. **Perguntar o próximo passo.** Ofereça opções contextuais: continuar a iteração
    ativa, iniciar algo novo ou encerrar iterações já concluídas.
 
-4. **Prosseguir.** Conforme a resposta:
+5. **Prosseguir.** Conforme a resposta:
    - Retomar a iteração ativa na fase apropriada do ciclo (Analisar → Planejar →
      Especificar → Redigir → Verificar).
    - Criar nova iteração `.stateful-spec/history/NNN-<nome>.md` e registrar em

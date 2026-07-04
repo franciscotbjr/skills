@@ -2,4 +2,7 @@
 .vscode
 
 .claude/settings.local.json
+.claude/settings.json
 
+prompt.md
+.gitignore

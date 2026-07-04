@@ -2,13 +2,15 @@
 
 > Referência de identidade, convenções e fluxo de trabalho do projeto.
 > Adaptado do template stateful-spec para um repositório de autoria de skills
-> (zero-code). Para a metodologia completa, ver o upstream:
-> https://github.com/franciscotbjr/stateful-spec
+> (zero-code). A metodologia (aparada para o tipo skills) vive localmente em
+> [`.stateful-spec/methodology/`](methodology/project-types.md); o upstream
+> (https://github.com/franciscotbjr/stateful-spec) é a fonte de referência.
 
 ## 1. Identidade
 
 - **Nome:** skills
-- **Tipo:** repositório zero-code de Agent Skills (extensões em Markdown).
+- **Tipo de projeto:** `skills` (registry da metodologia — repositório zero-code de
+  Agent Skills, extensões em Markdown).
 - **Domínio:** fidelidade linguística e qualidade de prosa (pt-BR e inglês).
 - **Licença:** MIT.
 
@@ -30,7 +32,15 @@ skills/
   <skill>/
     SKILL.md         — frontmatter (name, description) + instruções
     README.md        — docs voltados a humanos
-  .stateful-spec/    — estado, definição, operations e histórico
+  .stateful-spec/    — estado e metodologia:
+    memory.md          — estado vivo (ler primeiro)
+    project-definition.md — este arquivo
+    operations/        — corpos canônicos das 11 operações (PT-BR)
+    methodology/       — metodologia local, aparada p/ o tipo skills (EN)
+    templates/         — templates de spec/verificação/iteração
+    intake/            — caixa de entrada (Backlog/ Discovery/ QA/)
+    backlog.md         — oportunidades triadas (O-NNN)
+    history/           — iterações NNN-<nome>.md
 ```
 
 Skills atuais: `prosa-sobria` (PT), `pt-br-fullness` (PT), `sober-prose` (EN),
@@ -104,3 +114,14 @@ para autoria de skills:
    auto-checagem, fundamentando as afirmações em fonte.
 5. **Verificar** — passar pelos Quality Gates (seção 6): estrutura, gatilho,
    bilinguismo, sober-prose aplicada à própria skill e fundamentação.
+
+**Mapeamento fase → operação:**
+
+- Analisar + Especificar → `create-skill-spec`
+- Redigir + Verificar → `write-examples`
+- Diagnóstico (skill dispara errado / não dispara) → `diagnose-skill`
+- Revisão de forma (sem mudar intenção/gatilho) → `revise-skill`
+- Revisão de mudanças / docs / commit → `review-changes`, `update-documentation`, `write-commit-message`
+
+O ciclo de sessão (`start` / `resume` / `save` / `end-session`) envolve todas as fases
+e cuida do estado, da caixa de entrada (`intake/`) e do `backlog.md`.
