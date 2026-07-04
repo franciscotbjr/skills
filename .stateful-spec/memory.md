@@ -13,8 +13,9 @@
 
 ## Active Work
 
-_(nenhuma iteração ativa — próxima candidata: aplicação das personas no repo
-[consolidar `persona.md` + binding no `AGENTS.md`], a registrar em `intake/Backlog/`)_
+_(nenhuma iteração ativa — candidatas naturais: aplicar os protocolos G1–G3/R1–R4
+do `persona.md` numa revisão do catálogo existente, ou colher os sinais ex post
+da seção 9 do `persona-reference.md`)_
 
 ## Open Session
 
@@ -28,6 +29,7 @@ _(nenhuma sessão aberta)_
 | 2 | include-methodological-rigor | Include | 2026-05-31 |
 | 3 | upgrade-stateful-spec | chore | 2026-07-04 |
 | 4 | personas-especialistas | chore | 2026-07-04 |
+| 5 | aplicar-personas | chore | 2026-07-04 |
 
 ## Key Decisions
 
@@ -61,6 +63,14 @@ _(nenhuma sessão aberta)_
   conflitos entre elas (2026-05-31).
 - **`prosa-sobria`** permanece como contraparte PT da `sober-prose`; a agregação
   fica na `prosa-completa`, não nela (2026-05-31).
+- **Personas consolidadas no repo** (2026-07-04, iteração 005): modelo
+  stateful-spec — `.stateful-spec/persona.md` (system prompt operacional das
+  Personas A base + B extensão) + `persona-reference.md` (cópia verbatim da
+  pesquisa do vault; repo público não pode ancorar em caminho local) + binding
+  ambiente fino no `AGENTS.md`. A Persona antiga (credencial + listas de
+  competências) foi substituída: o formato declarativo não adiciona competência
+  (Zheng et al.; Playing Pretend) e o conteúdo redundante reprovou no teste de
+  subtração — o confronto completo está na iteração 005.
 - **`methodological-rigor`** (EN): skill de auditoria crítica de argumentação,
   metodologia e robustez epistêmica. Aplica persona de Crítico Implacável que
   questiona premissas não declaradas, vieses estruturais, circular reasoning,
@@ -71,7 +81,8 @@ _(nenhuma sessão aberta)_
 
 - README raiz e mensagens de commit são **bilíngues (PT/EN)**; skills são
   **monolíngues**.
-- Preservar integralmente a **Persona** e as convenções do `AGENTS.md`.
+- Preservar a **Persona** (binding no `AGENTS.md` + `.stateful-spec/persona.md`,
+  racional em `persona-reference.md`) e as convenções do `AGENTS.md`.
 - A própria prosa do repo (READMEs, docs) segue `sober-prose`/`prosa-sobria`:
   sem floreios retóricos.
 - Toda afirmação normativa numa skill se ancora em fonte (fundamentação).
@@ -85,3 +96,4 @@ _(nenhuma sessão aberta)_
 | 2  | include-methodological-rigor | Include | completed | [002-include-methodological-rigor.md](history/002-include-methodological-rigor.md) |
 | 3  | upgrade-stateful-spec | chore | completed | [003-upgrade-stateful-spec.md](history/003-upgrade-stateful-spec.md) |
 | 4  | personas-especialistas | chore | completed | [004-personas-especialistas.md](history/004-personas-especialistas.md) |
+| 5  | aplicar-personas | chore | completed | [005-aplicar-personas.md](history/005-aplicar-personas.md) |
