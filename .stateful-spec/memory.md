@@ -48,6 +48,9 @@ _(nenhuma sessão aberta)_
   type-agnostic e referenciado por `intake/QA`.
 - **Idioma misto:** state files e operations em PT-BR (voz do repo); `methodology/`,
   `templates/` e READMEs de `intake/` em EN (espelham o upstream como referência).
+- **`.claude/settings.json` ignorado** (2026-07-04): cache local de permissões da
+  sessão, não é config de projeto; adicionado ao `.gitignore` junto de
+  `settings.local.json` para não ser commitado por engano.
 - Skills do vault pessoal (`D:\franciscotbjr\Documents\Explorações\.claude\skills`)
   são a fonte canônica de atualizações das skills; o repo público recebe
   importações periódicas (2026-05-31).
