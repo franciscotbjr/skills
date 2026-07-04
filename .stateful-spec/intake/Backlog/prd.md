@@ -1,13 +1,15 @@
 ---
 status: triaged
-title: Personas especialistas para as evoluções do repositório
+title: Criar Skill readme-writer
 origin: idea
-destination: O-001 (backlog.md)
+destination: O-003 (backlog.md)
 ---
 
 # Problema
 
-Precisamo criar uma Persona para as evoluções deste repositório.
+Precisamo criar uma nova Skill que se configure como um especialista em escrita de README files.
+
+Um especialista que conheça bem as melhores formas de capturar os fundamentos de um repositório e que saiba propor um modelo de comunicação que transmita esse fundamento em um linguagem acessível e conectada com o público algo potencial.
 
 
 ## Ação
@@ -16,13 +18,7 @@ De forma análoga à pesquisa registrada aqui neste arquivo `D:\franciscotbjr\Do
 
 Pesquisa na internet em busca de artigos que possam trazer rigor conceitual e bases empíricas para a estruturação dessa persona persona especalizada em escrita de Skills. 
 
-Trabalharemos duas diferentes Personas: A primeira é especialistas em Skills para agentes de IA de propósito geral e A Segunda é especialida em temas relativos aos viezes linguísticos verificados nos outputs dos LLMs: o que é o caso das Skills que já existem aqui.
-
 O arquivo da pesquisa pura, antes do plano de aplicação neste repo, será criado em `D:\franciscotbjr\Documents\Explorações\Jandi` seguindo o modelo de `Agente - Persona Especialista em Pesquisa, Design e Curadoria de Metodologias SDD.md`.
-
-## O que não faremos agora
-- Não iremos ainda propor nenhuma alteração nas Skills existentes.
-
 
 ## Atenção
 

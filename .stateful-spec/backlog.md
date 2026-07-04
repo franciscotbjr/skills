@@ -15,6 +15,7 @@
 |------|-----------|--------|--------|---------|
 | O-001 | Pesquisar e estruturar duas personas especialistas para as evoluções do repo — (1) especialista em Skills para agentes de IA de propósito geral; (2) especialista em vieses linguísticos de outputs de LLMs. Pesquisa pura primeiro no vault (Jandi), nos moldes da persona SDD do stateful-spec; sem alterar as skills existentes nesta etapa. | idea (`intake/Backlog/prd.md`) | promoted | iteração [004-personas-especialistas](history/004-personas-especialistas.md) |
 | O-002 | Aplicar as personas pesquisadas no repo: derivar `persona.md` operacional do doc do vault (Persona A base + Persona B extensão) e fazer o binding no `AGENTS.md`, confrontando a Persona atual com a pesquisa. Sem alterar as skills existentes. | idea (`intake/Backlog/aplicar-personas.md`) | promoted | iteração [005-aplicar-personas](history/005-aplicar-personas.md) |
+| O-003 | Criar a skill `readme-writer` (especialista em escrita de README files): pesquisa pura primeiro no vault Jandi (rigor conceitual + bases empíricas), nos moldes da pesquisa das personas (O-001), com questionamento exaustivo (uma pergunta por vez) antes da execução. Sem alterar as skills existentes nesta etapa. | idea (`intake/Backlog/prd.md`) | promoted | iteração [006-readme-writer](history/006-readme-writer.md) |
 
 <!--
 Estados:

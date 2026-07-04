@@ -13,9 +13,11 @@
 
 ## Active Work
 
-_(nenhuma iteração ativa — candidatas naturais: aplicar os protocolos G1–G3/R1–R4
-do `persona.md` numa revisão do catálogo existente, ou colher os sinais ex post
-da seção 9 do `persona-reference.md`)_
+_(nenhuma iteração ativa — candidata natural: **consolidar a skill `readme-writer`**
+no catálogo a partir do doc de pesquisa da 006 (derivar `SKILL.md` + `README.md`
+em EN, gatilho passando G1–G3), a registrar em intake/Backlog; outras: aplicar os
+protocolos G1–G3/R1–R4 do `persona.md` numa revisão do catálogo existente, ou
+colher os sinais ex post da seção 9 do `persona-reference.md`)_
 
 ## Open Session
 
@@ -30,6 +32,7 @@ _(nenhuma sessão aberta)_
 | 3 | upgrade-stateful-spec | chore | 2026-07-04 |
 | 4 | personas-especialistas | chore | 2026-07-04 |
 | 5 | aplicar-personas | chore | 2026-07-04 |
+| 6 | readme-writer | chore | 2026-07-04 |
 
 ## Key Decisions
 
@@ -97,3 +100,4 @@ _(nenhuma sessão aberta)_
 | 3  | upgrade-stateful-spec | chore | completed | [003-upgrade-stateful-spec.md](history/003-upgrade-stateful-spec.md) |
 | 4  | personas-especialistas | chore | completed | [004-personas-especialistas.md](history/004-personas-especialistas.md) |
 | 5  | aplicar-personas | chore | completed | [005-aplicar-personas.md](history/005-aplicar-personas.md) |
+| 6  | readme-writer | chore | completed | [006-readme-writer.md](history/006-readme-writer.md) |
