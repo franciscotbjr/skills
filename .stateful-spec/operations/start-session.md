@@ -12,14 +12,19 @@ Inicia uma sessão de trabalho com contexto carregado a partir do estado persist
    - `.stateful-spec/history/` — iterações passadas e em andamento (se houver).
    - Se `.stateful-spec/` não existir, ofereça rodar o onboarding antes de seguir.
 
-2. **Resumir o estado.** Em 5–10 linhas, apresente: status do projeto, Active Work
+2. **Triar a caixa de entrada.** Varra `.stateful-spec/intake/` (Backlog/, Discovery/,
+   QA/) por itens com `status: ready`. Para cada um, promova a uma oportunidade `O-NNN`
+   em `.stateful-spec/backlog.md` (ou descarte com motivo) e marque o item como
+   `triaged`. Itens `draft` ou já `triaged` são ignorados. Ver `methodology/backlog.md`.
+
+3. **Resumir o estado.** Em 5–10 linhas, apresente: status do projeto, Active Work
    e Open Session (se houver), iterações recentes e as Constraints pertinentes.
 
-3. **Perguntar o foco.** Pergunte ao usuário o que ele quer fazer nesta sessão:
+4. **Perguntar o foco.** Pergunte ao usuário o que ele quer fazer nesta sessão:
    continuar um trabalho ativo, iniciar uma nova tarefa (skill nova, revisão de
    uma existente, mudança em docs/convenções) ou apenas consultar o estado.
 
-4. **Abrir o trabalho.** Conforme a resposta:
+5. **Abrir o trabalho.** Conforme a resposta:
    - **Nova tarefa:** determine o próximo número em `.stateful-spec/history/` e crie
      `NNN-<nome-kebab>.md` com: Tipo (skill nova / revisão / chore), Status
      (in-progress), descrição, critérios de aceitação (checkboxes) e tarefas

@@ -8,7 +8,7 @@
 - **Nome:** skills
 - **Descrição:** repositório zero-code de Agent Skills (extensões em Markdown)
   voltadas a fidelidade linguística e qualidade de prosa.
-- **Última atualização:** 2026-05-31
+- **Última atualização:** 2026-07-04
 - **Status:** Active development
 
 ## Active Work
@@ -25,19 +25,29 @@ _(nenhuma sessão aberta)_
 | - | ---- | ---- | ------------ |
 | 1 | sync-source-skills | Import | 2026-05-31 |
 | 2 | include-methodological-rigor | Include | 2026-05-31 |
+| 3 | upgrade-stateful-spec | chore | 2026-07-04 |
 
 ## Key Decisions
 
 - Repositório **documentation-only**: não há código, build, testes automáticos
   nem CI. "Qualidade" é medida por convenções de autoria (ver `project-definition.md`).
 - Onboarding stateful-spec adaptado ao domínio de autoria de skills (2026-05-31).
-- **Operations** restritas ao ciclo de sessão (`start/end/resume/save-session`);
-  a autoria de skills permanece guiada pela Persona e pelas skills existentes.
-- Corpo canônico das operations em `.stateful-spec/operations/*.md` (PT-BR);
-  `.claude/commands/` e `.opencode/commands/` são wrappers finos.
-- Metodologia completa **referenciada** no upstream
-  (github.com/franciscotbjr/stateful-spec); o ciclo adaptado vive no
-  `project-definition.md`. Não há `.stateful-spec/methodology/` local.
+- **Full upgrade da metodologia** (2026-07-04, iteração 003): revertidas as decisões
+  "enxutas" anteriores. Adotados `.stateful-spec/methodology/` local (aparado para o
+  tipo `skills`, EN), `templates/`, `intake/` + `backlog.md`, e o conjunto **completo
+  de 11 operations** do tipo skills. Objetivo: estrutura completa da metodologia
+  versionada com o repo.
+- **Operations = 11 (single-source):** ciclo (`start/resume/save/end-session`) +
+  `review-changes`, `update-documentation`, `write-commit-message` + `create-skill-spec`,
+  `write-examples`, `diagnose-skill`, `revise-skill`. Corpos canônicos PT-BR em
+  `.stateful-spec/operations/*.md`; `.claude/commands/` e `.opencode/commands/` são
+  wrappers finos (paridade dual-agent).
+- **Ops de software/studies ficam fora** (2026-07-04): projeto `skills` não carrega
+  `create-technical-spec`, `write-tests`, `debug-issue`, `refactor-code` nem as ops de
+  studies. O `multi-agent-flow` (fluxo de time) não é copiado; `qa-phase` entra por ser
+  type-agnostic e referenciado por `intake/QA`.
+- **Idioma misto:** state files e operations em PT-BR (voz do repo); `methodology/`,
+  `templates/` e READMEs de `intake/` em EN (espelham o upstream como referência).
 - Skills do vault pessoal (`D:\franciscotbjr\Documents\Explorações\.claude\skills`)
   são a fonte canônica de atualizações das skills; o repo público recebe
   importações periódicas (2026-05-31).
@@ -68,3 +78,4 @@ _(nenhuma sessão aberta)_
 | -- | ---- | ---- | ------ | ------- |
 | 1  | sync-source-skills | Import | completed | [001-sync-source-skills.md](history/001-sync-source-skills.md) |
 | 2  | include-methodological-rigor | Include | completed | [002-include-methodological-rigor.md](history/002-include-methodological-rigor.md) |
+| 3  | upgrade-stateful-spec | chore | completed | [003-upgrade-stateful-spec.md](history/003-upgrade-stateful-spec.md) |

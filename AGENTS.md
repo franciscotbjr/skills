@@ -13,19 +13,43 @@ sessões e agentes.
 - **Convenções e ciclo:** [`.stateful-spec/project-definition.md`](.stateful-spec/project-definition.md)
   — identidade, Quality Gates (convenções) e o ciclo de fases adaptado
   (Analisar → Planejar → Especificar → Redigir → Verificar).
-- **Metodologia completa:** referenciada no upstream (não copiada para o repo).
+- **Metodologia:** local em [`.stateful-spec/methodology/`](.stateful-spec/methodology/project-types.md),
+  aparada para o tipo de projeto `skills` (EN); o upstream é a fonte de referência.
+- **Caixa de entrada:** [`.stateful-spec/intake/`](.stateful-spec/intake/README.md)
+  (Backlog / Discovery / QA) alimenta o [`.stateful-spec/backlog.md`](.stateful-spec/backlog.md)
+  (`O-NNN`, triado em `start`/`resume`/`end-session`). Ver `methodology/backlog.md`.
 
-### Operações de sessão
+### Operações
 
-Os corpos canônicos vivem em `.stateful-spec/operations/`; os comandos nativos
-abaixo são wrappers finos (Claude Code e OpenCode, mesma sintaxe `/<nome>`):
+Os corpos canônicos vivem em `.stateful-spec/operations/`; os comandos nativos abaixo
+são wrappers finos (Claude Code e OpenCode, mesma sintaxe `/<nome>`). São as **11
+operações do tipo skills** — nenhuma operação de software ou studies.
+
+**Ciclo de sessão**
 
 | Comando | O que faz |
 | ------- | --------- |
-| `/start-session`  | Inicia a sessão carregando o estado do projeto |
+| `/start-session`  | Inicia a sessão, carrega o estado e tria a caixa de entrada |
 | `/resume-session` | Retoma o trabalho com o contexto persistido |
 | `/save-session`   | Salva o progresso em `memory.md` e na iteração ativa |
 | `/end-session`    | Encerra a sessão, persistindo o estado |
+
+**Compartilhadas**
+
+| Comando | O que faz |
+| ------- | --------- |
+| `/review-changes`       | Revisa as mudanças (skill/docs) antes de commit/PR |
+| `/update-documentation` | Atualiza README raiz, README da skill e docs de estado |
+| `/write-commit-message` | Escreve o commit na convenção bilíngue PT/EN, 1 linha, ≤300 |
+
+**Autoria de skills**
+
+| Comando | O que faz |
+| ------- | --------- |
+| `/create-skill-spec` | Especifica uma skill nova (fases Analisar + Especificar) |
+| `/write-examples`    | Redige pares antes/depois e checklist de auto-checagem |
+| `/diagnose-skill`    | Diagnostica uma skill que dispara errado ou não dispara |
+| `/revise-skill`      | Reestrutura/enxuga uma skill sem mudar intenção nem gatilho |
 
 Iterações de trabalho são rastreadas em `.stateful-spec/history/NNN-<nome>.md`.
 

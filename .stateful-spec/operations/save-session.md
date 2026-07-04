@@ -20,6 +20,9 @@ Preserva o progresso da sessão atual no estado persistido, para retomada futura
    - marque as tarefas concluídas;
    - acrescente tarefas recém-descobertas;
    - registre decisões;
+   - se a iteração tiver um **Session Log** (ver o template
+     `.stateful-spec/templates/implementation/iteration.md`), acrescente uma entrada
+     `AAAA-MM-DD HH:MM | <operação> | <resumo>`; falha de processo entra como `[INCIDENT]`;
    - ajuste o Status (done / blocked / in-progress).
 
 5. **Atualizar a memória.** Em `memory.md`: atualize Active Work (status ou promova
