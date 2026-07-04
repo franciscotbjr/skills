@@ -14,3 +14,4 @@ Coleção de [Agent Skills](https://agentskills.io) — extensões baseadas em p
 | [sober-prose](sober-prose/) | English | Suppresses RLHF-induced rhetorical patterns in expository writing in favor of precision and epistemic hedges. |
 | [verbosity-reduction](verbosity-reduction/) | English | Detects and removes Verbosity Compensation — padding answers with compressible tokens instead of committing to the answer. |
 | [methodological-rigor](methodological-rigor/) | English | Critical audit of argumentation, methodology, and epistemic robustness — questions unstated premises, unverified claims, structural biases, and circular reasoning. |
+| [readme-writer](readme-writer/) | English | Guides writing, restructuring, and reviewing README files — extracts the project's fundamentals, designs for the scanning reader, and keeps the file synchronized with the repository. |
