@@ -35,6 +35,9 @@ skills/
   .stateful-spec/    — estado e metodologia:
     memory.md          — estado vivo (ler primeiro)
     project-definition.md — este arquivo
+    persona.md         — system prompt operacional das personas A (autoria de
+                         skills) e B (vieses linguísticos), vinculado no AGENTS.md
+    persona-reference.md — referencial das personas (racional + fontes; sob demanda)
     operations/        — corpos canônicos das 11 operações (PT-BR)
     methodology/       — metodologia local, aparada p/ o tipo skills (EN)
     templates/         — templates de spec/verificação/iteração
