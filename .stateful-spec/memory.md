@@ -13,11 +13,11 @@
 
 ## Active Work
 
-_(nenhuma iteração ativa — candidata natural: **consolidar a skill `readme-writer`**
-no catálogo a partir do doc de pesquisa da 006 (derivar `SKILL.md` + `README.md`
-em EN, gatilho passando G1–G3), a registrar em intake/Backlog; outras: aplicar os
-protocolos G1–G3/R1–R4 do `persona.md` numa revisão do catálogo existente, ou
-colher os sinais ex post da seção 9 do `persona-reference.md`)_
+_(nenhuma iteração ativa — candidatas futuras: aplicar os protocolos
+G1–G3/R1–R4 do `persona.md` numa revisão do catálogo existente; colher os
+sinais ex post da seção 9 do `persona-reference.md`; contraparte PT-BR da
+`readme-writer`; corrigir no doc do vault o achado factual registrado nas Notas
+da 007 — status é a categoria MAIS ausente em Prana et al., não a segunda)_
 
 ## Open Session
 
@@ -33,6 +33,7 @@ _(nenhuma sessão aberta)_
 | 4 | personas-especialistas | chore | 2026-07-04 |
 | 5 | aplicar-personas | chore | 2026-07-04 |
 | 6 | readme-writer | chore | 2026-07-04 |
+| 7 | consolidar-readme-writer | new-skill | 2026-07-04 |
 
 ## Key Decisions
 
@@ -74,6 +75,11 @@ _(nenhuma sessão aberta)_
   competências) foi substituída: o formato declarativo não adiciona competência
   (Zheng et al.; Playing Pretend) e o conteúdo redundante reprovou no teste de
   subtração — o confronto completo está na iteração 005.
+- **`readme-writer`** (EN, 2026-07-04, iteração 007): skill de escrita/revisão
+  de READMEs derivada da pesquisa da 006 — capta os fundamentos do repo (a
+  lacuna do "porquê"), projeta para o leitor que escaneia e mantém o arquivo
+  sincronizado; regras rotuladas [empirical]/[practitioner], gatilho aprovado
+  em G1–G3. Contraparte PT-BR registrada como possibilidade, sem compromisso.
 - **`methodological-rigor`** (EN): skill de auditoria crítica de argumentação,
   metodologia e robustez epistêmica. Aplica persona de Crítico Implacável que
   questiona premissas não declaradas, vieses estruturais, circular reasoning,
@@ -101,3 +107,4 @@ _(nenhuma sessão aberta)_
 | 4  | personas-especialistas | chore | completed | [004-personas-especialistas.md](history/004-personas-especialistas.md) |
 | 5  | aplicar-personas | chore | completed | [005-aplicar-personas.md](history/005-aplicar-personas.md) |
 | 6  | readme-writer | chore | completed | [006-readme-writer.md](history/006-readme-writer.md) |
+| 7  | consolidar-readme-writer | new-skill | completed | [007-consolidar-readme-writer.md](history/007-consolidar-readme-writer.md) |
