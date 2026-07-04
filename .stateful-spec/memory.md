@@ -13,7 +13,8 @@
 
 ## Active Work
 
-_(nenhuma — aguardando a próxima tarefa/iteração)_
+_(nenhuma iteração ativa — próxima candidata: aplicação das personas no repo
+[consolidar `persona.md` + binding no `AGENTS.md`], a registrar em `intake/Backlog/`)_
 
 ## Open Session
 
@@ -26,6 +27,7 @@ _(nenhuma sessão aberta)_
 | 1 | sync-source-skills | Import | 2026-05-31 |
 | 2 | include-methodological-rigor | Include | 2026-05-31 |
 | 3 | upgrade-stateful-spec | chore | 2026-07-04 |
+| 4 | personas-especialistas | chore | 2026-07-04 |
 
 ## Key Decisions
 
@@ -82,3 +84,4 @@ _(nenhuma sessão aberta)_
 | 1  | sync-source-skills | Import | completed | [001-sync-source-skills.md](history/001-sync-source-skills.md) |
 | 2  | include-methodological-rigor | Include | completed | [002-include-methodological-rigor.md](history/002-include-methodological-rigor.md) |
 | 3  | upgrade-stateful-spec | chore | completed | [003-upgrade-stateful-spec.md](history/003-upgrade-stateful-spec.md) |
+| 4  | personas-especialistas | chore | completed | [004-personas-especialistas.md](history/004-personas-especialistas.md) |
