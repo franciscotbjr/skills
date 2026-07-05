@@ -10,9 +10,11 @@ description: >-
   é aplicada apenas se o texto-alvo for pt-BR; a sober-prose e a
   verbosity-reduction são aplicadas independentemente da língua. Não substitui
   as três skills individuais — é um atalho de invocação combinada com ordem
-  explícita de aplicação, gating de língua e resolução de conflitos. Acione
-  via /prosa-completa quando o trabalho envolver revisão integral de texto
-  longo; para escopo específico, prefira a skill individual correspondente.
+  explícita de aplicação, gating de língua e resolução de conflitos. Dispara
+  em pedidos de revisão completa ou integral de texto longo e via
+  /prosa-completa; quando dispara, executa as três componentes por dentro da
+  própria ordem — não as re-aplique em paralelo. Para escopo específico,
+  prefira a skill individual correspondente.
 ---
 
 # Prosa Completa
@@ -38,7 +40,9 @@ Casos típicos de uso da `prosa-completa`:
 
 ## Ordem de aplicação
 
-Aplique nesta sequência, em uma única passada:
+Quando a `prosa-completa` conduz a revisão, as três componentes são executadas
+por dentro desta sequência — não as acione em paralelo por fora. Aplique em
+uma única passada:
 
 1. **Gere ou edite o texto sem checklist.** O conteúdo precisa estar minimamente coerente antes que as três skills possam fazer trabalho útil. Tentar aplicar as três simultaneamente à primeira escrita produz paralisia.
 
@@ -46,7 +50,7 @@ Aplique nesta sequência, em uma única passada:
 
 3. **sober-prose (segundo filtro).** Aplique já com a "second pass" da própria skill incorporada — cace fragmentos de antítese (anti-pattern #10), jargão usado cru sem desdobramento (anti-pattern #11) e os resíduos retóricos que tipicamente sobrevivem à primeira aplicação. Se o texto-alvo for pt-BR, traduza mentalmente os exemplos das anti-patterns (que estão em inglês na SKILL.md original) para o equivalente em pt-BR antes de aplicar.
 
-4. **pt-br-fullness (terceiro filtro, condicional).** Aplique apenas se o texto-alvo for pt-BR. Percorra as sete categorias da skill: artigos definidos, conectivos discursivos, regência verbal, pronomes oblíquos, modo subjuntivo, crase e pro-drop. Se o texto for em inglês ou em outra língua, pule esta etapa.
+4. **pt-br-fullness (terceiro filtro, condicional).** Aplique apenas se o texto-alvo for pt-BR. Percorra as onze categorias da skill: artigos definidos, conectivos discursivos, regência verbal, pronomes oblíquos, modo subjuntivo, crase, pro-drop, estrangeirismos lexicais, calques semânticos, títulos sem sujeito e barra-como-ou. Se o texto for em inglês ou em outra língua, pule esta etapa.
 
 5. **Passada cruzada final.** Releia o texto com as três checklists em mente ao mesmo tempo, procurando casos em que uma correção feita por uma das skills tenha introduzido drift de outra dimensão. É raro, mas acontece — ver a seção de resolução de conflitos abaixo.
 

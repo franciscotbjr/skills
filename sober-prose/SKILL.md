@@ -1,6 +1,6 @@
 ---
 name: sober-prose
-description: Use whenever writing expository, technical, philosophical, analytical, or explanatory prose responses. Suppresses rhetorical biases typical of RLHF training — punchy closings, aphoristic endings, "X is not just Y, it's Z" constructions, ternary parallelisms, adjective inflation, and marketing callbacks — in favor of precision, epistemic hedges, and endings without flourish. Apply to any substantive response even when the user does not explicitly ask for "plain writing." Do not apply to explicit requests for creative prose, poetry, copywriting, or persuasive text.
+description: Use whenever writing expository, technical, philosophical, analytical, or explanatory prose responses in English, or in any language without a dedicated counterpart. Suppresses rhetorical biases typical of RLHF training — punchy closings, aphoristic endings, "X is not just Y, it's Z" constructions, ternary parallelisms, adjective inflation, and marketing callbacks — in favor of precision, epistemic hedges, and endings without flourish. Apply to any substantive response even when the user does not explicitly ask for "plain writing." For Portuguese prose, prosa-sobria is the counterpart. Do not apply to explicit requests for creative prose, poetry, copywriting, or persuasive text.
 ---
 
 # Sober Prose
@@ -115,3 +115,6 @@ If working on a document the user is iterating with you, expect to be asked to r
 - When the user explicitly asks for a pitch, advertising copy, or persuasive rhetoric.
 - Very short messages (one or two sentences), where the bias rarely manifests.
 - When the user signals a preference for a light, playful, or casual tone in a specific interaction.
+- Portuguese prose: `prosa-sobria` is the counterpart (same anti-patterns, Portuguese examples).
+- Pure compressibility without rhetorical bias (restated questions, global hedges, unrequested detail): that is `verbosity-reduction`'s target — the two legitimately co-fire on the same text from different angles.
+- Full-text combined revision led by `prosa-completa` (the Portuguese aggregator): it composes this skill's rules inside its own ordering; do not re-apply this skill in parallel.

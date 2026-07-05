@@ -10,6 +10,9 @@ description: >-
   density matters: QA, extraction, classification, tool-call arguments,
   structured output, or terse user requests. Trigger even if the user did not
   use the word "concise" — VC is most harmful precisely when it goes unnoticed.
+  Do not apply to curating repository files (shortening a README is
+  readme-writer's job), to creative or persuasive writing where rhythm is part
+  of the product, or to detail the user explicitly requested.
 ---
 
 # Verbosity Reduction
@@ -183,30 +186,25 @@ If cutting a span would remove information the user needs, it is not VC — leav
 it. The failure mode of this skill is stripping substance to hit a length
 target. Concision serves the answer; it does not replace it.
 
-## Architectural mitigation (for system builders)
+## When NOT to apply
 
-The behavioral self-check above is for a model shaping its own output. If you
-are building a pipeline rather than answering directly, the source paper's
-mitigation is structural and worth porting:
-
-- **Uncertainty-gated cascade.** Measure per-response uncertainty (perplexity
-  on the answer span for open models; a proxy such as logit/Laplacian or a
-  cheap self-consistency vote for closed ones). When uncertainty exceeds a
-  threshold, treat the response as likely-VC and replace it — re-prompt with a
-  hard concision instruction, route to another model, or fall back to a
-  deterministic path. In the paper this cascade dropped VC on one model from
-  ~64% to ~16% on Qasper.
-- **Concision instruction at the boundary.** A system-level "answer in the
-  fewest tokens that preserve the answer; a single phrase if possible"
-  measurably reduces VC, but does not eliminate it — pair it with the gate.
-- **Separate the metrics.** Track answer correctness and response compressibility
-  as independent axes. Length alone is a poor proxy; you want low compressibility
-  at fixed correctness, not merely short outputs.
-
-These are pre-runtime or boundary controls. They keep the uncertainty handling
-out of the hot path, which suits batch or DSL-compiled architectures where the
-expensive judgment happens at configuration time and execution stays
-deterministic.
+- **Curating repository files.** "Make my README shorter" is file curation,
+  not response compression — that belongs to `readme-writer`, whose subtraction
+  test runs against audience questions. This skill targets the agent's own
+  generated responses.
+- **Creative or persuasive writing**, where rhythm, repetition, and texture are
+  part of the product (`sober-prose` carries the matching exclusions for
+  expository style).
+- **Detail, reasoning, or enumeration the user explicitly asked for** — see
+  "Do not overcorrect": cutting requested substance is a different failure,
+  not compression.
+- **Neighbors.** `sober-prose` flags rhetorical bias on the same spans from a
+  different angle — legitimate co-fire. `prosa-completa` (the Portuguese
+  aggregator) composes this skill for full-text revisions; when it leads, do
+  not re-apply this skill in parallel. Architectural mitigations for pipeline
+  builders (uncertainty-gated cascade, boundary concision instruction) live in
+  this skill's README, not here — they are configuration-time controls, not
+  response-shaping moves.
 
 ## Source
 

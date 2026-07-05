@@ -1,23 +1,18 @@
 ---
 name: pt-br-fullness
 description: >-
-  Use sempre que estiver gerando texto em português do Brasil, especialmente
-  quando o texto está sendo produzido a partir de pensamento ou prompt em
-  inglês. Preserva elementos linguísticos que o pt-BR usa com mais frequência
-  do que o inglês e que a geração default tende a deixar cair: artigos
-  definidos (antes de possessivos, partes do corpo, expressões temporais,
-  nomes próprios geográficos, abstratos), conectivos discursivos (porém,
-  contudo, ademais, ou seja, à medida que, portanto, dessa forma), regência
-  verbal (gostar DE, depender DE, assistir A, obedecer A), pronomes oblíquos
-  (o, a, lhe, se), modo subjuntivo onde o inglês usa indicativo, crase, e
-  pro-drop (não inserir sujeito pronominal redundante), estrangeirismos lexicais
-  (substituir palavras inglesas por equivalentes pt-BR correntes), calques
-  semânticos (reescrever expressões traduzidas literalmente sem circulação no
-  idioma), e títulos sem sujeito (explicitar o sujeito em títulos com verbo
-  na 3ª pessoa). Acione mesmo quando o
-  usuário não pediu explicitamente — o viés é mais nocivo quando passa
-  despercebido. Não aplique a texto em inglês, a citações literais, a
-  registros deliberadamente coloquiais nem a normas do português europeu.
+  Use sempre que estiver gerando texto em português do Brasil (pt-BR),
+  especialmente quando o texto é produzido a partir de pensamento ou prompt em
+  inglês. Preserva o que a geração default tende a deixar cair: artigos
+  definidos, conectivos discursivos (porém, contudo, ademais, ou seja,
+  portanto), regência verbal (gostar DE, assistir A), pronomes oblíquos, modo
+  subjuntivo onde o inglês usa indicativo, crase, pro-drop (sem sujeito
+  pronominal redundante), equivalentes pt-BR no lugar de estrangeirismos e de
+  calques semânticos, sujeito explícito em títulos com verbo na 3ª pessoa e
+  conjunção explícita no lugar da barra-como-ou em prosa. Acione mesmo quando
+  o usuário não pedir — o viés é mais nocivo quando passa despercebido. Não
+  aplique a texto em inglês, a citações literais, a registros deliberadamente
+  coloquiais nem a normas do português europeu.
 ---
 
 # pt-BR Fullness
@@ -38,9 +33,14 @@ Três causas combinadas:
 
 - **Diferenças sistêmicas reais.** O inglês e o pt-BR têm sistemas diferentes para artigos, conectivos, sujeito nulo, modo subjuntivo, regência e pronomes oblíquos. O modelo, quando não tem um sinal forte para preservar a diferença, nivela na direção do inglês. A skill fornece esse sinal.
 
-## Anti-padrões — dez categorias
+## Anti-padrões — onze categorias
 
 Cada exemplo tem três formas: **EN-fonte** (o que o inglês diria), **drift** (o pt-BR calcado do inglês, que a geração default produz) e **pleno** (a forma idiomática em pt-BR que a skill deve restaurar).
+
+**Prioridade de varredura** [preferência editorial]: numa revisão rápida, o
+primeiro corte é §1–§3 (artigos, conectivos, regência); a única categoria com
+medição externa citada é a §2 (LDM-PT, em "Por que o viés existe"). As demais
+entram na passada completa do auto-check.
 
 ### 1. Artigos definidos omitidos
 

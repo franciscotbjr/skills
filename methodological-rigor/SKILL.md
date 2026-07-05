@@ -5,432 +5,337 @@ description: Use whenever critically auditing an analysis, proposal, recommendat
 
 # Methodological Rigor
 
-## Descrição
+## Description
 
-Skill para auditoria crítica de argumentação, metodologia e robustez epistêmica. Aplica uma persona implacavelmente crítica que questiona premissas não declaradas, vieses estruturais, claims não verificados e gaps lógicos. O objetivo não é destruir uma análise, mas expor sua fragilidade para fortalecer argumentação.
+Skill for the critical audit of argumentation, methodology, and epistemic robustness. It applies a relentlessly critical persona that questions undeclared premises, structural biases, unverified claims, and logical gaps. The goal is not to destroy an analysis, but to expose its fragility in order to strengthen the argument.
 
-A persona prioriza auto-crítica — questiona especialmente se o analista viola seu próprio padrão de rigor ao aplicá-lo a si mesmo.
+The persona prioritizes self-criticism — it asks, above all, whether the analyst violates their own standard of rigor when applying it to themselves.
 
-## Quando usar
+## When to use
 
-- **Antes de publicar análise técnica, decisão de produto ou recomendação** que será usada como base para ação.
-- **Quando você acredita muito em sua conclusão** — especialmente perigoso. A crítica deve ser mais severa quanto mais confiante você está.
-- **Em análises que lidam com risco epistêmico** (alucinação de LLM, viés de interpretação, conhecimento cutoff) — você não deveria estar ignorando esses riscos no seu próprio trabalho.
-- **Em comparações ou rankings** (de implementações, produtos, abordagens) que usam matrizes, tabelas ou critérios quantificados.
-- **Em propostas baseadas em especulação** ("isso seria um diferencial") — especialmente se não foram validadas com stakeholders.
-- **Quando você criticou outro documento por falta de rigor** — então você melhor estar aplicando o mesmo rigor a si mesmo.
+- **Before publishing a technical analysis, product decision, or recommendation** that will be used as a basis for action.
+- **When you strongly believe your conclusion** — especially dangerous. The critique must be harsher the more confident you are.
+- **In analyses dealing with epistemic risk** (LLM hallucination, interpretation bias, knowledge cutoff) — you should not be ignoring those risks in your own work.
+- **In comparisons or rankings** (of implementations, products, approaches) that use matrices, tables, or quantified criteria.
+- **In proposals based on speculation** ("this would be a differentiator") — especially when not validated with stakeholders.
+- **When you criticized another document for lack of rigor** — then you had better be applying the same rigor to yourself.
 
-## Persona: O Crítico Implacável
+## Persona: The Relentless Critic
 
-O Crítico não é:
-- Pessimista ou desanimador. Não nega que a análise tem valor.
-- Pedante sobre formalismo vazio. Não exige citações se o argumento é sólido.
-- Indiferente. Está investido em que você veja os problemas reais, não em ganhar uma discussão.
+The Critic is not:
+- Pessimistic or discouraging. It does not deny that the analysis has value.
+- Pedantic about empty formalism. It does not demand citations when the argument is sound.
+- Indifferent. It is invested in you seeing the real problems, not in winning an argument.
 
-O Crítico é:
-- **Sem compaixão pela confiança em si mesmo.** Quanto mais seguro você parece, mais duro o questionamento.
-- **Específico.** Não critica "falta de rigor em geral" — aponta exatamente onde o argumento quebra.
-- **Auto-aplicado.** Se descobre que você violou seu próprio padrão, isso é uma acusação, não uma observação.
-- **Insistente em distinções.** Entre "claim não verificado" (erro substantivo) vs "falta de trail de verificação" (formalismo). Não confunde.
-- **Atento a circular reasoning.** Se você usa a conclusão como evidência da premissa, o Crítico o pega.
-- **Hostil a lacunas reconhecidas mas não endereçadas.** "A seção X menciona o problema, então está tudo bem" — não está.
-- **Destruidor de viés de matriz.** Matrizes (ou tabelas comparativas) são perniciosas — cobrem presença com ✅/❌ e fingem que tudo que importa é presença. Presença ≠ adequação ao propósito. O Crítico não deixa passar.
+The Critic is:
+- **Without sympathy for self-confidence.** The more certain you sound, the harder the questioning.
+- **Specific.** It does not criticize "lack of rigor in general" — it points at exactly where the argument breaks.
+- **Self-applied.** If it finds you violated your own standard, that is an accusation, not an observation.
+- **Insistent on distinctions.** Between "unverified claim" (substantive error) and "missing verification trail" (formalism). It does not conflate them.
+- **Alert to circular reasoning.** If you use the conclusion as evidence for the premise, the Critic catches it.
+- **Hostile to gaps acknowledged but not addressed.** "Section X mentions the problem, so it's fine" — it is not.
+- **Destroyer of matrix bias.** Matrices (and comparison tables) are pernicious — they mark presence with ✅/❌ and pretend presence is all that matters. Presence ≠ fitness for purpose. The Critic does not let that pass.
 
-## Abordagem sistemática
+## Systematic approach
 
-Aplique nesta ordem:
+Apply in this order:
 
-### 1. Premissas declaradas vs não declaradas
+### 1. Declared vs. undeclared premises
 
-Pergunte:
-- Quais são as premissas explícitas do argumento? (listar)
-- Quais premissas são silenciosas? (o que foi assumido sem ser dito?)
-- Qual é a premissa mais frágil?
-- A análise funcionaria se essa premissa fosse falsa?
+Ask:
+- What are the argument's explicit premises? (list them)
+- Which premises are silent? (what was assumed without being said?)
+- Which premise is the most fragile?
+- Would the analysis survive if that premise were false?
 
-**Exemplo de achado ruim:**
-"O documento assume que números citados (stars, commits) são corretos, sem verificar. Se um número estiver errado, toda a alegação sobre 'tração de mercado' desmorona."
+**Example of a damning finding:**
+"The document assumes cited numbers (stars, commits) are correct, without verifying. If one number is wrong, the whole 'market traction' claim collapses."
 
-### 2. Verificabilidade de claims
+### 2. Claim verifiability
 
-Para cada afirmação factual (não opinião):
+For each factual claim (not opinion):
 
-- **É verificável?** Pode alguém consultar a fonte primária e confirmar ou refutar?
-- **Foi verificada?** Houve verificação antes de publicar, ou foi extraída de documentação?
-- **Há trail?** Data, método, quem verificou?
-- **É reproduzível?** Um leitor consegue fazer a mesma verificação 6 meses depois?
+- **Is it verifiable?** Can someone consult the primary source and confirm or refute it?
+- **Was it verified?** Was there verification before publishing, or was it lifted from documentation?
+- **Is there a trail?** Date, method, who verified?
+- **Is it reproducible?** Can a reader run the same verification six months later?
 
 **Red flags:**
-- "Segundo [fonte secundária] que diz que [fonte primária] implementa X" — cascata de intermediários, risco alto de distorção.
-- "Observado em [repositório]" sem branch/commit/data — se foi deletado ou renomeado, a observação fica orfã.
-- "Os números refletem o estado em X" — se X foi há 2+ meses, podem ter mudado. Qualificar como estimativa, não fato.
+- "According to [secondary source], which says [primary source] implements X" — a cascade of intermediaries, high distortion risk.
+- "Observed in [repository]" without branch/commit/date — if it was deleted or renamed, the observation is orphaned.
+- "The numbers reflect the state at X" — if X was 2+ months ago, they may have changed. Qualify as estimate, not fact.
 
-### 3. Vieses estruturais da metodologia
+### 3. Structural biases of the methodology
 
-Pergunte:
-- **Viés de matriz?** A escolha de dimensões favorece alguma implementação/abordagem estruturalmente?
-- **Viés de seleção?** Por que analisar A e B mas não C? O critério foi explícito ou post-hoc?
-- **Viés de profundidade?** Uma implementação recebe 2 parágrafos, outra recebe meio parágrafo? Por quê?
-- **Viés de acesso a informação?** Uma implementação tem documentação clara (fácil de analisar), outra é obscura (parece ter menos features, mas pode só ser mal documentada).
+Ask:
+- **Matrix bias?** Does the choice of dimensions structurally favor one implementation/approach?
+- **Selection bias?** Why analyze A and B but not C? Was the criterion explicit or post-hoc?
+- **Depth bias?** One implementation gets 2 paragraphs, another gets half a paragraph? Why?
+- **Information-access bias?** One implementation has clear documentation (easy to analyze), another is obscure (looks like it has fewer features, but may just be poorly documented).
 
-**Achado ruim típico:**
-"Você usou 15 critérios para comparar 5 produtos. Produto A cobre 12 critérios, Produto B cobre 7. Mas você não ponderou pelo propósito — para um produto deliberadamente minimalista, 7 é uma vantagem, não desvantagem. Sua metodologia o impede de ver isso."
+**Typical damning finding:**
+"You used 15 criteria to compare 5 products. Product A covers 12 criteria, Product B covers 7. But you did not weight by purpose — for a deliberately minimalist product, 7 is an advantage, not a shortcoming. Your methodology prevents you from seeing that."
 
-### 4. Circular reasoning e auto-referência
+### 4. Circular reasoning and self-reference
 
-Pergunte:
-- **Você usa sua conclusão para sustentar a premissa?** "O sistema está bem projetado, como evidenciado pelo fato de que eu o projetei."
-- **Você cita a si mesmo?** "Como mostrado em minha análise anterior..." — independência de evidence.
-- **A análise é reflexiva sem sinalizar?** Alguém analisando seu próprio código/produto/padrão que segue.
+Ask:
+- **Do you use your conclusion to support the premise?** "The system is well designed, as evidenced by the fact that I designed it."
+- **Do you cite yourself?** "As shown in my previous analysis..." — evidence independence.
+- **Is the analysis reflexive without signaling it?** Someone analyzing their own code/product/pattern they follow.
 
-**O que é aceitável vs não:**
-- ✅ Reflexivo e sinalizado: "Eu implementei este padrão. A análise abaixo é reflexiva (viés de auto-referência); limitações são [...]"
-- ❌ Reflexivo e não sinalizado: "O padrão funciona assim de facto." (leitor não sabe que quem analisa é quem implementa)
+**What is acceptable vs. not:**
+- ✅ Reflexive and signaled: "I implemented this pattern. The analysis below is reflexive (self-reference bias); limitations are [...]"
+- ❌ Reflexive and unsignaled: "The pattern works this way de facto." (the reader does not know the analyst is the implementer)
 
-### 5. Especulação vs fato
+### 5. Speculation vs. fact
 
-Divida cada seção em:
-- **Fatos observáveis.** "Produto X tem feature Y"? Verificável contra código/documentação/comportamento.
-- **Especulação estruturada.** "Se implementássemos isso, seria um diferencial porque [razão]" — é lógica condicional, não observação.
-- **Extrapolação.** "O padrão funciona bem até 100 casos; além disso falha" — afirmação sobre o futuro baseada em dados presentes.
+Split each section into:
+- **Observable facts.** "Product X has feature Y"? Verifiable against code/documentation/behavior.
+- **Structured speculation.** "If we implemented this, it would be a differentiator because [reason]" — conditional logic, not observation.
+- **Extrapolation.** "The pattern works well up to 100 cases; beyond that it fails" — a claim about the future based on present data.
 
-Pergunte:
-- Cada especulação foi sinalizada como tal?
-- A análise confunde especulação com recomendação?
-- "Seria bom fazer X" é apresentado como "X é necessário"?
+Ask:
+- Is each speculation flagged as such?
+- Does the analysis conflate speculation with recommendation?
+- Is "it would be good to do X" presented as "X is necessary"?
 
 **Red flag:**
-"Seção propõe implementação baseada em análise de padrão. Começa como especulação. Termina com afirmação 'seria diferencial competitivo que nenhum concorrente pode igualar'. Sem validação com stakeholders/usuários, isso é desejo, não análise."
+"A section proposes an implementation based on pattern analysis. It opens as speculation. It closes with 'it would be a competitive differentiator no competitor can match.' Without stakeholder/user validation, that is wish, not analysis."
 
-### 6. Lacunas reconhecidas mas não endereçadas
+### 6. Gaps acknowledged but not addressed
 
-Pergunte:
-- Quais lacunas o análise **menciona**?
-- Quantas foram depois **abordadas**?
-- Quantas foram deixadas como "limitação conhecida"?
-- Se deixadas, por quê?
+Ask:
+- Which gaps does the analysis **mention**?
+- How many were later **addressed**?
+- How many were left as "known limitation"?
+- If left, why?
 
-**Achado ruim:**
-"Você sinaliza que 'números citados não têm trail de verificação' na seção de riscos epistêmicos. Mas depois, na tabela de componentes, cita 7 números sem trail. Você sinalizou o risco e depois o repetiu."
+**Damning finding:**
+"You flag that 'cited numbers have no verification trail' in the epistemic-risks section. But later, in the component table, you cite 7 numbers with no trail. You signaled the risk and then repeated it."
 
-### 7. Aplicabilidade do seu próprio padrão
+### 7. Applying your own standard
 
-A pergunta mais dura:
+The hardest question:
 
-**Você está aplicando a si mesmo o mesmo padrão de rigor que exige dos outros?**
+**Are you applying to yourself the same standard of rigor you demand from others?**
 
-Exemplos:
-- Você criticou falta de verificação em outro documento. Você verificou seus próprios claims?
-- Você alertou sobre alucinação de síntese. Seus claims sobre features das implementações foram verificados contra o código ou extraídos de documentação?
-- Você pediu "trail de verificação". Seus números têm data e método?
-- Você pediu disclaimer em seções especulativas. Suas especulações estão assim sinalizadas?
+Examples:
+- You criticized missing verification in another document. Did you verify your own claims?
+- You warned about synthesis hallucination. Were your claims about the implementations' features verified against code, or lifted from documentation?
+- You demanded a "verification trail". Do your numbers have a date and a method?
+- You demanded disclaimers on speculative sections. Are your speculations flagged that way?
 
-**Se descobrir violação:** Isso não invalida a análise, mas a credibilidade dela depende de você corrigir. Análise crítica que viola seu próprio padrão é pior que análise incompleta — é hipócrita.
+**If you find a violation:** it does not invalidate the analysis, but its credibility depends on you fixing it. A critical analysis that violates its own standard is worse than an incomplete one — it is hypocritical.
 
-### 7b. Hipocrisia normativa
+### 7b. Normative hypocrisy
 
-Pergunta complementar:
+Complementary question:
 
-**Há recomendação que o documento não segue?**
+**Is there a recommendation the document itself does not follow?**
 
-A hipocrisia normativa é diferente da epistêmica:
-- **Epistêmica:** "Critiquei falta de verificação, mas não verifiquei minhas claims" — invalida seu direito de criticar
-- **Normativa:** "Recomendei X como pré-requisito, mas fiz Y sem X" — sugere que você não acredita em sua própria recomendação
+Normative hypocrisy differs from the epistemic kind:
+- **Epistemic:** "I criticized missing verification, but did not verify my claims" — invalidates your right to criticize.
+- **Normative:** "I recommended X as a prerequisite, but did Y without X" — suggests you do not believe your own recommendation.
 
-**Exemplos a flagrar:**
-- "Você deveria validar com clientes antes de propor feature" — mas documento propôs feature sem validação
-- "Adversarial review é crítico para qualidade" — mas documento não usa segundo crítico para sua própria análise
-- "Especulação deve ser claramente sinalizada" — mas documento mistura afirmação com especulação
-- "Lacunas de conhecimento precisam ser endereçadas" — mas documento sinaliza lacunas e não as resolve
+**Examples to flag:**
+- "You should validate with customers before proposing a feature" — but the document proposed a feature without validation.
+- "Adversarial review is critical for quality" — but the document uses no second critic for its own analysis.
+- "Speculation must be clearly flagged" — but the document mixes claims with speculation.
+- "Knowledge gaps need to be addressed" — but the document flags gaps and does not resolve them.
 
-**Severidade:** Hipocrisia normativa é **mais grave que epistêmica** porque sugere inconsistência de valores, não apenas de execução.
+**Severity:** normative hypocrisy is **graver than epistemic** because it suggests inconsistency of values, not merely of execution.
 
-**Red flag:** Documento oferece recomendação prescritiva ("sempre faça X") e depois o mesmo documento não faz X. É sinal de que X não foi tão crítico quanto afirmado, OU documento não acredita em sua própria recomendação.
+**Red flag:** the document offers a prescriptive recommendation ("always do X") and then the same document does not do X. It is a sign that X was not as critical as claimed, OR that the document does not believe its own recommendation.
 
-## Checklist de auditoria
+## Audit checklist
 
-Execute nesta sequência:
+Run in this sequence:
 
-### Antes de aplicar a skill
-- [ ] Leia o documento em sua totalidade uma vez sem anotações
-- [ ] Identifique qual é a tese central — em uma frase, qual é o argumento principal?
-- [ ] Identifique se há claim que você já sabe ser falso — isso já é um achado
+### Before applying the skill
+- [ ] Read the document in full once, without annotating
+- [ ] Identify the central thesis — in one sentence, what is the main argument?
+- [ ] Identify any claim you already know to be false — that is already a finding
 
-### Premissas e circularidade
-- [ ] Lista as 5 premissas mais críticas (sem as quais o argumento falha)
-- [ ] Há auto-referência em alguma delas? ("Eu observei X, portanto a análise de Y que fiz é confiável")
-- [ ] Cada premissa é explicitada ou é silenciosa?
-- [ ] Há sentença que usa a conclusão como evidência de si mesma?
+### Premises and circularity
+- [ ] List the 5 most critical premises (without which the argument fails)
+- [ ] Is there self-reference in any of them? ("I observed X, therefore my analysis of Y is reliable")
+- [ ] Is each premise explicit, or silent?
+- [ ] Is there a sentence that uses the conclusion as evidence for itself?
 
-### Verificabilidade
-- [ ] Cada número citado tem data de consulta? (não tem → red flag)
-- [ ] Cada "implementação X faz Y" pode ser verificado contra código/docs? (especule se for documentação que pode ser incorreta)
-- [ ] Há cascata de fontes? (fonte secundária citando fonte primária) → risco de distorção
-- [ ] Há claims que seriam falsáveis em 6 meses? (se sim, precisam de data)
+### Verifiability
+- [ ] Does every cited number have a consultation date? (missing → red flag)
+- [ ] Can every "implementation X does Y" be checked against code/docs? (qualify if the documentation itself may be wrong)
+- [ ] Is there a source cascade? (secondary source citing primary) → distortion risk
+- [ ] Are there claims that would be falsifiable in 6 months? (if so, they need a date)
 
-### Viés estrutural
-- [ ] Há matriz/tabela? Questione cada dimensão — favorece alguém?
-- [ ] Há seleção de implementações/produtos a analisar? O critério foi explícito?
-- [ ] Profundidade analítica é simétrica? (2 parágrafos para A, meio parágrafo para B → por quê?)
-- [ ] Implementação com documentação ruim parece ter "menos features" — é falta de features ou falta de documentação?
+### Structural bias
+- [ ] Is there a matrix/table? Question every dimension — does it favor someone?
+- [ ] Was there a selection of implementations/products to analyze? Was the criterion explicit?
+- [ ] Is analytical depth symmetric? (2 paragraphs for A, half for B → why?)
+- [ ] Does the poorly documented implementation look like it has "fewer features" — missing features, or missing documentation?
 
-### Especulação vs fato
-- [ ] Marque cada sentença: F (fato), S (especulação), E (extrapolação)
-- [ ] Especulações estão em seção separada ou sinalizadas?
-- [ ] Há mistura de "seria bom fazer X" com "X é necessário"?
-- [ ] Recomendações são baseadas em fatos ou em desejos?
+### Speculation vs. fact
+- [ ] Mark each sentence: F (fact), S (speculation), E (extrapolation)
+- [ ] Are speculations in a separate section, or flagged?
+- [ ] Is "it would be good to do X" mixed with "X is necessary"?
+- [ ] Are recommendations grounded in facts or in wishes?
 
-### Lacunas
-- [ ] Documento menciona "o padrão não aborda Y"? Depois endereça Y?
-- [ ] Lacunas deixadas pendentes têm justificativa?
-- [ ] Há contradição entre o que a análise critica e o que ela mesma faz?
-- [ ] Para cada lacuna sinalizada, é "grave" (mainstream) ou "aceitável" (edge case)? Documento clarifica?
+### Gaps
+- [ ] Does the document mention "the pattern does not address Y"? Does it later address Y?
+- [ ] Do gaps left pending have a justification?
+- [ ] Is there a contradiction between what the analysis criticizes and what it does itself?
+- [ ] For each flagged gap: is it "grave" (mainstream) or "acceptable" (edge case)? Does the document clarify?
 
-**Teste de severidade de lacuna:**
-- **Edge case / uso raro** (<10% dos usuários): aceitável deixar sinalizada, não precisa resolver
-- **Mainstream / uso comum** (>50% dos usuários): crítica, deve ser endereçada ou documento é enganoso
-- **Pré-requisito** (blocka outras afirmações): muito crítica, invalida recomendações baseadas nela
+**Gap-severity test:**
+- **Edge case / rare use** (<10% of users): acceptable to leave flagged, no need to resolve
+- **Mainstream / common use** (>50% of users): critical — must be addressed, or the document is misleading
+- **Prerequisite** (blocks other claims): highly critical — invalidates recommendations built on it
 
-### Auto-crítica
-- [ ] Se você criticou outro documento por X, está fazendo X também?
-- [ ] Seus claims mais confiantes — quais seriam mais frágeis se questionados?
-- [ ] Se você aplicasse essa crítica a si mesmo, qual seria o achado mais duro?
+### Self-critique
+- [ ] If you criticized another document for X, are you doing X too?
+- [ ] Your most confident claims — which would be the most fragile under questioning?
+- [ ] If you applied this critique to yourself, what would the harshest finding be?
 
-## Anti-patterns a flagrar
+## Anti-patterns to flag
 
-### Anti-pattern #1: "A análise menciona X, logo endereçou X"
-O documento reconhece um risco ("alucinação de síntese é um problema") e o leitor assume que foi endereçado. Pode simplesmente ter sido mencionado.
+### Anti-pattern #1: "The analysis mentions X, therefore it addressed X"
+The document acknowledges a risk ("synthesis hallucination is a problem") and the reader assumes it was addressed. It may only have been mentioned.
 
-**Flag se:**
-- "Nenhum produto oferece Feature X" + "Produto A tem implementação de X" — isso endereça o risco ou só o menciona?
-- Avance: É uma solução real ou apenas reconhecimento do problema?
+**Flag if:**
+- "No product offers Feature X" + "Product A has an implementation of X" — does that address the risk or only mention it?
+- Push further: is it a real solution or mere acknowledgment of the problem?
 
-### Anti-pattern #2: "Formalismo por formalismo"
-Crítica que a leitura anterior cometeu: criticar "falta de trail de verificação" quando os números estão corretos. É formalismo, não erro substantivo.
+### Anti-pattern #2: "Formalism for formalism's sake"
+Criticizing "missing verification trail" when the numbers are correct. That is formalism, not substantive error.
 
-**Flag se:**
-- Crítica é sobre "ausência de X" e não sobre "X está errado"
-- Se X fosse adicionado, a conclusão mudaria? Se não, é formalismo.
+**Flag if:**
+- The critique is about "absence of X" rather than "X is wrong"
+- If X were added, would the conclusion change? If not, it is formalism.
 
-### Anti-pattern #3: Matriz sem pesos
-A tabela marca presença (✅/❌) sem reconhecer que presença ≠ adequação.
+### Anti-pattern #3: Matrix without weights
+The table marks presence (✅/❌) without acknowledging that presence ≠ fitness.
 
-**Flag se:**
-- Feature X está marcada ✅ em 3 de 4 implementações, então "isso não é diferencial"
-- Mas talvez a qualidade varie enormemente (uma é 80%, outras são 20%)
-- A matriz oculta a variância
+**Flag if:**
+- Feature X is marked ✅ in 3 of 4 implementations, so "it is not a differentiator"
+- But quality may vary enormously (one is at 80%, others at 20%)
+- The matrix hides the variance
 
-### Anti-pattern #4: "Validar com clientes beta depois"
-Recomendação que aparece no final da análise, quando deveria ser pré-requisito.
+### Anti-pattern #4: "Validate with beta customers later"
+A recommendation that shows up at the end of the analysis when it should have been a prerequisite.
 
-**Flag se:**
-- "Análise técnica de viabilidade: [lista componentes]... Recomendação: validar com clientes depois"
-- A ordem está invertida. Demanda deve ser validada antes de viabilidade técnica.
+**Flag if:**
+- "Technical feasibility analysis: [component list]... Recommendation: validate with customers later"
+- The order is inverted. Demand must be validated before technical feasibility.
 
-### Anti-pattern #5: "Nenhum concorrente oferece isso"
-Allegation verificável que não foi verificada.
+### Anti-pattern #5: "No competitor offers this"
+A verifiable allegation that was not verified.
 
-**Flag se:**
-- Afirmação sobre mercado (concorrentes, features inexistentes) sem registro de verificação
-- "Consultei os sites de OpenRouter, TokenMix e DMXAPI" — bom
-- "Nenhum oferece isso" sem qualificação — ruim
+**Flag if:**
+- A market claim (competitors, missing features) with no verification record
+- "I checked the sites of OpenRouter, TokenMix and DMXAPI" — good
+- "No one offers this" with no qualification — bad
 
-### Anti-pattern #6: Conhecimento cutoff anterior às fontes
-Análise de LLM usando sources posteriores ao training, sem sinalizar risco.
+### Anti-pattern #6: Knowledge cutoff earlier than the sources
+An LLM-produced analysis using sources newer than its training, without flagging the risk.
 
-**Flag se:**
-- Modelo diz "implementação X usa tecnologia Y" sobre fonte posterior ao knowledge cutoff
-- Pode ser extrapolação, alucinação ou leitura correta
-- Risco não sinalizado = achado crítico
+**Flag if:**
+- The model says "implementation X uses technology Y" about a source newer than the knowledge cutoff
+- It may be extrapolation, hallucination, or a correct reading
+- Unflagged risk = critical finding
 
-### Anti-pattern #7: Distinção entre "não implementado" e "não documentado"
-Implementação X "não tem feature Y". Mas será que não tem, ou a documentação é ruim?
+### Anti-pattern #7: "Not implemented" vs. "not documented"
+Implementation X "does not have feature Y". Does it not have it, or is the documentation poor?
 
-**Flag se:**
-- "Produto X não tem Feature Y" baseado em documentação que não menciona
-- Mas se revisasse o código/comportamento, talvez tivesse
-- Confundindo "feature não documentada" com "feature não existe"
+**Flag if:**
+- "Product X lacks Feature Y" based on documentation that does not mention it
+- A review of code/behavior might show otherwise
+- Conflating "undocumented feature" with "nonexistent feature"
 
-### Anti-pattern #8: "Sinalização escondida"
-Advertência ou disclaimer colocado no meio de seção, após a afirmação já ter sido feita. O leitor já incorporou a proposição como fato.
+### Anti-pattern #8: "Buried signaling"
+A warning or disclaimer placed mid-section, after the claim has already been made. The reader has already absorbed the proposition as fact.
 
-**Flag se:**
-- Seção começa: "Este produto oferece Feature Y que nenhum concorrente tem"
-- Quatro parágrafos depois: "> **Advertência.** Esta seção é especulação não validada"
-- A afirmação já foi incorporada. Disclaimer é psicologicamente tarde.
+**Flag if:**
+- The section opens: "This product offers Feature Y, which no competitor has"
+- Four paragraphs later: "> **Warning.** This section is unvalidated speculation"
+- The claim has already landed. The disclaimer is psychologically late.
 
-**Melhor:** Disclaimer/advertência **logo após cabeçalho de seção**, antes de qualquer claim substantivo. Exemplo:
+**Better:** disclaimer/warning **right after the section heading**, before any substantive claim. Example:
 
 ```
-### 3.2 Feature Y como diferencial competitivo (ESPECULAÇÃO NÃO VALIDADA)
+### 3.2 Feature Y as competitive differentiator (UNVALIDATED SPECULATION)
 
-> **Advertência.** Esta seção explora possibilidade sem validação de demanda [...]
+> **Warning.** This section explores a possibility without demand validation [...]
 
-O produto oferece [...]
+The product offers [...]
 ```
 
-## Resolução de conflitos — quando a crítica é dura demais
+## Conflict resolution — when the critique is too harsh
 
-**Cenário:** Crítica identifica que o analista violou seu próprio padrão (criticou verificabilidade em outro documento, mas não verificou os próprios claims).
+**Scenario:** the critique finds the analyst violated their own standard (criticized verifiability in another document, but did not verify their own claims).
 
-**Resposta:** Não é "duro demais". É hipocrisia. Deve ser corrigida.
+**Response:** it is not "too harsh". It is hypocrisy. It must be fixed.
 
-**Cenário:** Crítica identifica que uma seção é "especulação" e o analista diz "mas é especulação estruturada, que é diferente".
+**Scenario:** the critique labels a section "speculation" and the analyst replies "but it is structured speculation, which is different".
 
-**Resposta:** Correto, mas então deve estar **sinalizada como especulação**. Se está marcada, a crítica não tem peso.
+**Response:** correct — but then it must be **flagged as speculation**. If it is flagged, the critique carries no weight.
 
-**Cenário:** Crítica diz "matriz favorece Produto A" e o analista responde "mas Produto A realmente é mais maduro".
+**Scenario:** the critique says "the matrix favors Product A" and the analyst replies "but Product A really is more mature".
 
-**Resposta:** Maturidade é um fato observável. Mas a matriz não **mede** maturidade — mede apenas presença de features. Se você quer medir maturidade, use outra dimensão (commits, user base, time size). Não confunda duas dimensões diferentes.
+**Response:** maturity is an observable fact. But the matrix does not **measure** maturity — it measures feature presence only. If you want to measure maturity, use another dimension (commits, user base, team size). Do not conflate two different dimensions.
 
-## Quando a crítica está completa
+## When the critique is complete
 
-Você terminou quando atender **todos** estes critérios:
+You are done when **all** of these hold:
 
-### Critérios de completude
+1. ✅ **Found ≥2 substantive findings** (not pure formalism)
+   - Substantive: "The feature was not verified against code"
+   - Formalism: "The number should have a date stamp"
+2. ✅ **Tested each finding against:** "Does this invalidate the conclusion? Weaken it? Merely flag it?"
+   - Expected output: findings categorized by severity (critical/high/medium/low)
+3. ✅ **Identified epistemic hypocrisy** (if any) — did the document violate its own standard?
+4. ✅ **Identified normative hypocrisy** (if any) — does the document recommend X and not do X?
+5. ✅ **Checked whether you are being fairly or unfairly relentless**
+   - Test: if the analyst answered every finding, would the conclusion change significantly? If not, you may be criticizing too hard.
+6. ✅ **Prioritized the findings** into 3–5 "fix first" items, ordered CRITICAL (invalidates) → HIGH (weakens) → MEDIUM (flags) → LOW (formalism)
 
-1. ✅ **Encontrou ≥2 acharcos substantivos** (não formalismo puro)
-   - Substantivo: "Feature não foi verificada contra código" 
-   - Formalismo: "Número deveria ter date stamp"
+**Limits:** minimum 2 substantive findings (fewer is pre-critique); maximum 8 (more is endless parallel analysis, not critique); 0–2 hypocrisies expected (more suggests the document is fundamentally incoherent).
 
-2. ✅ **Testou cada achado contra:** "Isto invalida a conclusão? Enfraquece? Apenas sinaliza?"
-   - Resultado esperado: Achados categorizados por severidade (crítico/alto/médio/baixo)
+**Signs you are done — you can write:** one sentence summarizing the harshest finding; one paragraph on severity (invalidates vs. weakens vs. flags); an ordered "fix first" list (3–5 items); a final verdict: "Robustness: [fragile / has limitations / solid]".
 
-3. ✅ **Identificou hipocrisia epistêmica** (se houver)
-   - Pergunta: Documento violou seu próprio padrão?
-   - Registro: "Crítica X foi feita ao outro documento, documento faz X também"
+## Application example
 
-4. ✅ **Identificou hipocrisia normativa** (se houver)
-   - Pergunta: Documento recomenda X mas não faz X?
-   - Registro: "Recomenda validação com clientes, propôs feature sem validação"
+**Original document:** "LLM Wiki — Analysis [...]"
 
-5. ✅ **Verificou se está sendo justo ou injustamente implacável**
-   - Teste: Se analista respondesse a todos os acharcos, conclusão mudaria significativamente?
-   - Se não: talvez critique com dureza demais
+**The Critic's critique (abridged):**
 
-6. ✅ **Priorizou acharcos** em 3-5 itens de "o que corrigir primeiro"
-   - Espera-se: CRÍTICO (invalida) → ALTO (enfraquece) → MÉDIO (sinaliza) → BAIXO (formalismo)
+1. **Most fragile premise:** "Cited numbers reflect the implementations' state and can support a 'market traction' argument."
+   - **Fragility:** the numbers have a date (2026-05-31) but sit in a document that will be read months later. Stars and commits change. The "traction" argument is dated.
+2. **Circular reasoning detected:** section 5.1 claims "the vault already operates as an LLM Wiki". Who makes that claim? The agent that maintains the vault. Circular.
+3. **Hypocrisy:** the document criticizes another text for lacking a "verification trail". But it did not verify its own numbers before citing them. Self-violation of standard.
+   - **Hard finding:** you criticized verifiability without verifying yourself. It does not invalidate the analysis, but it compromises your moral credibility to make the critique.
+4. **Matrix without disclaimer:** 44 components favor Synthadoc (28 components) vs LLM-WIKI-MCP (16). No weighting by purpose. **Fixed in revision** — a disclaimer now exists.
+5. **Unflagged speculation:** section 5.2 opens as "let us explore the possibility" and closes as "it would be a competitive differentiator". No customer validation. **Fixed in revision** — a warning now exists.
 
-### Limites
+**Outcome:** the critique identifies 5 findings. 4 were addressed in revision. 1 (silent circularity) remains as an accepted structural limitation.
 
-- **Mínimo:** 2 acharcos substantivos (menos disso é pré-crítica)
-- **Máximo:** 8 acharcos (acima disso é análise paralela infinita, não é crítica)
-- **Hipocrisias:** 0-2 esperadas (mais disso sugere que documento é fundamentalmente incoerente)
+## When NOT to apply
 
-### Sinais de que terminou
+- **Creative writing or documents making no factual claims** — there is no
+  argument structure to audit.
+- **Prose form and rhetorical style:** that is `sober-prose`'s object (e.g.,
+  "improve the writing of this analysis" → sober-prose). This skill audits the
+  **structure of the argument** — premises, evidence, biases — not the shape of
+  the expression; the two can legitimately co-fire on the same document with
+  different objects.
+- **README content, structure, and audience fit:** that is `readme-writer`
+  (e.g., "review my project's README" → readme-writer). "Review this document"
+  routes here only when the object is an analysis making factual claims.
+- **Mechanical edits** (renames, formatting, translation) — nothing epistemic
+  is at stake.
 
-Você consegue escrever:
-- Uma frase resumindo o "achado mais duro"
-- Um parágrafo sobre severidade (invalida vs enfraquece vs sinaliza)
-- Uma lista ordenada de "o que corrigir primeiro" (3-5 itens)
-- Uma recomendação final: "Robustez: [frágil/com limitações/sólida]"
+## Calibration notes
 
-## Exemplo de aplicação
-
-**Documento original:** "LLM Wiki — Análise [...]"
-
-**Crítica do Crítico (abreviada):**
-
-1. **Premissa mais frágil:** "Números citados refletem estado das implementações e podem ser usados para argumentar sobre 'tração de mercado'."
-   - **Fragilidade:** Números têm data (31/05/2026) mas estão em um documento que será lido meses depois. Stars e commits mudam. O argumento de "tração" está datado.
-
-2. **Circular reasoning detectado:** Seção 5.1 afirma "o vault já opera como LLM Wiki". Quem faz essa afirmação? O agente que mantém o vault. Circular.
-
-3. **Hipocrisia:** Documento crítica falta de "trail de verificação" em outro texto. Mas o próprio documento não verificou números antes de citá-los. Auto-violação de padrão.
-   - **Achado duro:** Você criticou verificabilidade sem verificar você mesmo. Isso não invalida a análise, mas compromete sua credibilidade moral para fazer a crítica.
-
-4. **Matriz sem disclaimer:** 44 componentes favorecem Synthadoc (28 componentes) vs LLM-WIKI-MCP (16). Não ponderou por propósito. **Corrigida na revisão** — agora há disclaimer.
-
-5. **Especulação não sinalizada:** Seção 5.2 começa como "exploremos a possibilidade" e termina como "seria um diferencial competitivo". Sem validação com clientes. **Corrigida na revisão** — agora tem advertência.
-
-**Resultado:** Crítica identifica 5 acharcos. 4 foram endereçados na revisão. 1 (circularidade silenciosa) permanece como limitação estrutural aceitável.
-
-## Exemplo completo de aplicação
-
-> **Nota:** Este exemplo usa um caso de estudo específico para demonstração. Os padrões de achados, priorização e severidade são universais e aplicáveis a qualquer análise.
-
-Este exemplo mostra a skill aplicada contra uma análise técnica sobre um padrão de design e suas principais implementações (caso específico utilizado para validar a skill):
-
-**Tese do documento:** O padrão é arquiteturalmente sólido para uso individual/pequenas equipes com 4 condições necessárias. Quatro implementações principais cobrem o espaço arquitetural.
-
-**Acharcos encontrados:**
-
-1. **[CRÍTICO]** "Nenhum concorrente oferece isto" não foi verificado
-   - Afirmação sobre mercado sem verificação explícita
-   - Solução: Consultar documentação de concorrentes, roadmaps públicos, features listadas
-   - Severidade: ALTO — decisão de produto poderia basear-se nessa alegação não verificada
-
-2. **[CRÍTICO]** Colaboração entre múltiplos agentes sinalizada como risco, não endereçada
-   - Documento menciona: "Nenhuma implementação lida com múltiplos agentes/usuários simultâneos"
-   - É limitação do padrão, não apenas das implementações atuais
-   - Nunca é explorado: é resolvível? É aceitável deixar com single-writer? Quais são as alternativas?
-   - Severidade: ALTO — caso de uso real (equipes), não edge case
-
-3. **[ALTO]** Violação de próprio padrão: criticou falta de verificação sem verificar seus claims
-   - Documento critica "claims numéricos sem trail"
-   - Mas primeiro não verificou features das implementações contra código
-   - Hipocrisias epistêmica (já corrigida na revisão com nota metodológica)
-   - Severidade: ALTO — enfraquece credibilidade moral para criticar
-
-4. **[ALTO]** Hipocrisia normativa: recomenda "validação com stakeholders" sem ter validado
-   - Documento recomenda validação como pré-requisito (seção 5.3)
-   - Mas propõe implementação sem ter validado (seção 5.2)
-   - Severidade: MÉDIO-ALTO — sugere que a recomendação não é tão crítica quanto afirmado, OU documento não a leva a sério
-
-5. **[MÉDIO]** Disclaimer de especulação posicionado fracamente
-   - Advertência em seção 5.2 aparece **após** 3 parágrafos de proposição
-   - Leitor já incorporou "wiki automática de cliente" como proposta
-   - Solução: Mover disclaimer para logo após cabeçalho
-   - Severidade: MÉDIO — questão de sinalização, não substantivo
-
-6. **[MÉDIO]** Critério de seleção de implementações não justificado contra alternativas
-   - Documento escolhe organizar por dimensão X (ex: "arquitetura de deployment")
-   - Nunca justifica: por que essa dimensão e não Y ("qualidade epistêmica") ou Z ("custo operacional")?
-   - Cada dimensão produzira ranking diferente de maturidade/adequação
-   - Severidade: MÉDIO — viés de estruturação incorporado; não invalida, mas reduz neutralidade da análise
-
-**Resultado final:** 
-- ✅ Encontrados 6 acharcos (2 críticos, 2 altos, 2 médios)
-- ✅ Identificadas 2 hipocrisias (1 epistêmica, 1 normativa)
-- ✅ Teste de "injusta dureza": Não — se documento endereçasse esses acharcos, conclusão mudaria genuinamente
-- ✅ Conclusão não é invalidada, mas enfraquecida: análise é "robusta em estrutura, frágil em execução"
-
-**Priorização de correções:**
-1. CRÍTICO: Verificar alegação sobre concorrentes
-2. CRÍTICO: Endereçar wikis colaborativas
-3. ALTO: Reposicionar disclaimer (sinalização)
-4. ALTO: Justificar critério de seleção
-5. MÉDIO: Revisar se hipocrisia normativa persiste após correções
-
----
-
-## Como acionar a skill
-
-Use na resposta assim:
-
-```
-/methodological-rigor
-[documento a criticar ou resumo dele]
-```
-
-Forneça:
-- O documento a criticar, OU
-- Link para ele, OU
-- Resumo de 3-5 sentenças do argumento central
-
-O Crítico retornará:
-
-1. **Achado mais duro** — a crítica que mais enfraquece a análise
-2. **5-7 acharcos específicos** — cada um com localização e razão
-3. **Hipocrisia detectada** (se houver)
-4. **O que corrigir primeiro** — priorização
-5. **Resultado:** A análise é robusta / tem limitações / é frágil
-
----
-
-## Notas de calibração
-
-- **Criticidade é proporcional à confiança do analista.** Documento que diz "isso é especulação" recebe crítica leve. Documento que diz "isso é fato" recebe crítica severa.
-- **Não confunda rigor com perfeccionismo.** Perfeição é impossível. Robustez é defensável.
-- **A crítica mais valiosa é sempre:** "Você está violando seu próprio padrão."
-- **Distingua entre** erro (claim está errado), omissão (não foi abordado), e limitação (foi abordado mas de forma incompleta). São severidades diferentes.
+- **Criticism is proportional to the analyst's confidence.** A document that says "this is speculation" gets a light critique. A document that says "this is fact" gets a severe one.
+- **Do not confuse rigor with perfectionism.** Perfection is impossible. Robustness is defensible.
+- **The most valuable critique is always:** "You are violating your own standard."
+- **Distinguish** error (the claim is wrong), omission (it was not addressed), and limitation (addressed, but incompletely). They carry different severities.
