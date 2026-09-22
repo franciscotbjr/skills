@@ -8,7 +8,7 @@
 - **Nome:** skills
 - **Descrição:** repositório zero-code de Agent Skills (extensões em Markdown)
   voltadas a fidelidade linguística e qualidade de prosa.
-- **Última atualização:** 2026-07-04
+- **Última atualização:** 2026-09-22
 - **Status:** Active development
 
 ## Active Work
@@ -23,10 +23,14 @@ na fronteira de R1 e densidade da methodological-rigor)_
 
 ## Open Session
 
-- **2026-07-04** — sessão retomada para fechamento da iteração 008
-  (`revisar-catalogo`): usuário validou as edições A1–A12; iteração marcada
-  completed e movida para Recent Completions; commit/PR preparados na branch
-  `update/revisar-catalogo`.
+- _(nenhuma sessão aberta)_
+
+## Próximo passo sugerido
+
+- Retomada em 2026-09-22 (`resume-session`) não abriu trabalho novo: sem
+  iteração ativa, intake triado, working tree limpo e iteração 008 já fechada
+  e mergeada (PR #15). Próximo passo: escolher uma das candidatas registradas
+  em Active Work ou capturar novo trabalho na intake.
 
 ## Recent Completions
 
