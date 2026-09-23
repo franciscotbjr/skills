@@ -17,13 +17,14 @@ O treinamento por feedback humano (RLHF) recompensa texto que soa satisfatório 
 
 Um subtipo que merece ser sinalizado à parte é o **encerramento prescritivo/admoestatório** — uma frase final que entrega regra, comando ou juízo em modo imperativo ou deôntico (*deve ser rejeitada*, *sem comprometer*, *não é tolerado*). Frequentemente aparece depois de uma definição que já carrega o critério implícito, tornando a etiqueta prescritiva redundante. Teste: remova a frase de encerramento. Se o critério que ela enuncia já está implícito na definição anterior, é floreio. Se o critério é novo, integre-o à definição mais cedo no parágrafo em vez de apendá-lo como veredicto.
 
-**2. Construção "X não é apenas Y, é Z".** Cria progressão retórica que sugere insight onde frequentemente só há reformulação. Sub-variantes a reconhecer e remover:
+**2. Construção "X não é apenas Y, é Z".** Cria progressão retórica que sugere insight onde frequentemente só há reformulação. Sub-variantes a reconhecer:
 
 - **"X, não Y"** (negação apositiva no fim da oração): *"É um requisito arquitetural, não um traço de personalidade."* → *"É um requisito arquitetural."*
 - **"Não com X, mas Y"** (negação adverbial + contraste): *"Não com um escore de confiança genérico, mas mapeando topologicamente."* → *"Mapeando topologicamente."*
 - **"X não é Y — é Z"** (travessão + antítese): *"Predição não é escore de confiança — é uma afirmação mensurável."* → *"Predição é uma afirmação mensurável sobre o que será observado."*
+- **"Não é X, mas Y" com conteúdo** (negação delimitadora/corretiva): a metade negativa carrega delimitação que o leitor precisa — corrige uma leitura plausível ou afasta uma posição alternativa real. Exemplo: *"Ela não é uma propriedade das imagens em si, mas o coeficiente de pertinência prática que faz uma imagem se destacar. É sempre relativa ao corpo."* A negação informa onde a propriedade **não** mora antes de dizer onde mora. Tratamento: **não** deletar. Converter a delimitação em afirmação positiva e integrá-la à definição — declarar o lócus real: *"Ela é o coeficiente de pertinência prática que faz uma imagem se destacar. Esse coeficiente pertence à relação entre o corpo e as imagens."* Se o lócus positivo não é recuperável do texto nem do que você sabe com segurança, mantenha a negação: ela é a informação disponível.
 
-As três compartilham o mesmo defeito central: constroem um andaime de contraste para entregar a afirmação positiva, e a metade negativa é enchimento. Remova a metade negativa; a afirmação positiva se sustenta sozinha.
+As três primeiras compartilham o mesmo defeito central: constroem um andaime de contraste para entregar a afirmação positiva, e a metade negativa é enchimento. Remova a metade negativa; a afirmação positiva se sustenta sozinha. Na quarta, a metade negativa é informação — aplique o teste da deleção com perda: remova a metade negativa; se uma delimitação ou correção que o leitor plausivelmente precisa desaparecer, converta-a em afirmação positiva em vez de deletá-la. O teste vale para todas as variantes.
 
 Variantes adicionais a evitar: "mais do que X, é Y"; "não se trata de X, mas de Y"; "X vai além de Y".
 
@@ -58,6 +59,7 @@ Variantes adicionais a evitar: "mais do que X, é Y"; "não se trata de X, mas d
 - **Adjetivos funcionais, não emotivos.** "Reduz latência em 30%" em vez de "transformador para performance".
 - **Listas só quando o conteúdo é genuinamente paralelo.** Caso contrário, prosa.
 - **Exemplo concreto ancorando alegação abstrata.** Quando a alegação enuncia um mecanismo em abstrato, ancore-a com um caso específico introduzido por *"por exemplo, ..."*. É o único ponto em que esta skill recomenda *adicionar* em vez de cortar. Distinga do anti-padrão VC #4 (detalhe verboso, na verbosity-reduction): o exemplo válido mostra o mecanismo em ação — um caso específico que o leitor não derivaria sozinho da alegação geral; o exemplo inválido parafraseia a alegação com outras palavras. Teste: depois de escrever a alegação operacional abstrata, pergunte que caso concreto a exemplifica. Se a resposta é um caso específico que mostra o mecanismo, adicione. Se parafraseia, não.
+- **Delimitação positiva.** Quando a negação delimita ou corrige (afasta leitura plausível), declare positivamente onde a propriedade vive — *"pertence à relação entre o corpo e as imagens"* — em vez de negar onde ela não vive. Deletar a metade negativa que carrega conteúdo apaga informação; converter preserva.
 - **Preferir remoção à reformulação quando o floreio duplica conteúdo.** Se o fechamento aforístico, a antítese, o veredicto prescritivo ou a frase de exagero repete uma ideia já presente no texto ao redor, deletar. Reformular para preservar cada linha mantém o volume de palavras sem preservar informação.
 
 ## Antes / depois
@@ -84,12 +86,18 @@ Variantes adicionais a evitar: "mais do que X, é Y"; "não se trata de X, mas d
 
 **Depois:** "Entender a ferramenta é um pré-requisito; usá-la bem exige prática repetida em casos onde o comportamento dela diverge do esperado."
 
+---
+
+**Antes:** "Ela não é uma propriedade das imagens em si, mas o coeficiente de pertinência prática que faz uma imagem se destacar no campo perceptivo. É sempre relativa ao corpo, às suas capacidades e às suas necessidades."
+
+**Depois:** "Ela é o coeficiente de pertinência prática que faz uma imagem se destacar no campo perceptivo. Esse coeficiente pertence à relação entre o corpo e as imagens, e é sempre relativo ao corpo, às suas capacidades e às suas necessidades."
+
 ## Auto-checagem antes de enviar
 
 Antes de finalizar uma resposta, revisar:
 
 1. A última frase termina no ponto substantivo, ou é arremate?
-2. Há alguma construção "não é apenas X, é Y" ou suas sub-variantes ("X, não Y"; "não com X, mas Y"; "X não é Y — é Z")?
+2. Há alguma construção "não é apenas X, é Y" ou suas sub-variantes ("X, não Y"; "não com X, mas Y"; "X não é Y — é Z"; "não é X, mas Y" com conteúdo)? A metade negativa é enchimento (remover) ou delimitação com conteúdo (converter em afirmação positiva)?
 3. Há adjetivos enfáticos sem conteúdo funcional?
 4. Os paralelismos ternários são necessários ou só rítmicos?
 5. Onde há incerteza, ela está sinalizada?
@@ -101,9 +109,10 @@ Se a resposta a qualquer item indica viés retórico, reformular antes de enviar
 
 ## Segunda passada
 
-A primeira aplicação destas regras tipicamente deixa resíduos. Três categorias sobrevivem à primeira passada e precisam de uma segunda varredura focada:
+A primeira aplicação destas regras tipicamente deixa resíduos. As categorias abaixo sobrevivem à primeira passada e precisam de uma segunda varredura focada:
 
 - Antíteses que "parecem informacionalmente necessárias" mas cuja informação aparece em outro lugar (ex.: uma antítese vetor-vs-escalar ao lado de uma enumeração que já implica o vetor).
+- Negações delimitadoras tratadas como enchimento — o erro inverso: o teste da deleção com perda não foi aplicado e uma delimitação foi deletada junto com o andaime. Antes de deletar qualquer metade negativa, aplique o teste.
 - Fragmentos de antítese (anti-padrão #10) e jargão cru (anti-padrão #11) — estes sobrevivem à primeira passada porque parecem prosa técnica enxuta.
 - Metáforas definicionais emprestadas de outro domínio (anti-padrão #12) — sobrevivem porque a figura parece evocativa e condensa a ideia numa imagem só; o enquadramento importado engana em silêncio antes que o leitor perceba.
 - Aspas de proteção (anti-padrão #13) — sobrevivem porque parecem hedging honesto sobre uma palavra imprecisa; na prática empurram o trabalho de desambiguação para o leitor, que tem que adivinhar o que as aspas estão protestando.
@@ -119,4 +128,5 @@ Se estiver trabalhando em um documento que o usuário está iterando com você, 
 - Quando o usuário sinaliza preferência por tom leve, lúdico ou casual em uma interação específica.
 - Prosa em inglês: a contraparte é a `sober-prose` (mesmos anti-padrões, exemplos em inglês).
 - Padding compressível sem viés retórico (repetição da pergunta, hedges globais, detalhe não pedido): o alvo é da `verbosity-reduction` — as duas podem co-disparar legitimamente sobre o mesmo texto, por ângulos distintos.
+- Contraste substantivo entre duas posições reais em discussão comparativa (não definicional): negar a posição do outro é o assunto, não andaime — a regra do anti-padrão #2 não se aplica a argumentos contra uma posição nomeada.
 - Revisão integral conduzida pela `prosa-completa`: a agregadora já executa as regras desta dimensão por dentro da própria ordem; não re-aplique esta skill em paralelo.

@@ -14,7 +14,7 @@ O Agente de IA ativa a skill automaticamente quando a conversa envolve escrita e
 
 - Respostas expositivas, técnicas, filosóficas ou analíticas
 - Qualquer resposta substantiva onde vieses retóricos prejudicariam a precisão
-- Edição iterativa de documentos que o usuário está revisando parágrafo por parágrafo — a skill inclui uma rotina de "segunda passada" para fechamentos aforísticos residuais (incluindo o subtipo prescritivo/admoestatório), fragmentos de antítese, jargão cru e sub-variantes expandidas da construção "X não é Y" (negação apositiva, negação adverbial + contraste, travessão + antítese)
+- Edição iterativa de documentos que o usuário está revisando parágrafo por parágrafo — a skill inclui uma rotina de "segunda passada" para fechamentos aforísticos residuais (incluindo o subtipo prescritivo/admoestatório), fragmentos de antítese, jargão cru e sub-variantes expandidas da construção "X não é Y" (negação apositiva, negação adverbial + contraste, travessão + antítese, negação delimitadora com conteúdo convertida em afirmação positiva)
 
 ## Quando não se aplica
 

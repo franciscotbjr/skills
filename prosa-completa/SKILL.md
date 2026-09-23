@@ -25,7 +25,7 @@ Reúne em uma única chamada as três skills de qualidade de prosa do vault e de
 
 As três skills componentes:
 
-- **sober-prose** — suprime viéses retóricos típicos do treinamento RLHF: fechamentos aforísticos, construções "X é Y, não Z", paralelismos ternários, adjetivos enfáticos, dashes decorativos, jargão cru usado como âncora definicional, metáfora definicional vinda de outro domínio, aspas decorativas (scare quotes) e fragmentos imitando antítese. Também recomenda **uma adição** — exemplo concreto ancorando alegação abstrata sobre o funcionamento de um mecanismo.
+- **sober-prose** — suprime viéses retóricos típicos do treinamento RLHF: fechamentos aforísticos, construções "X é Y, não Z" (com o teste da deleção com perda para a metade negativa), paralelismos ternários, adjetivos enfáticos, dashes decorativos, jargão cru usado como âncora definicional, metáfora definicional vinda de outro domínio, aspas decorativas (scare quotes) e fragmentos imitando antítese. Também recomenda **uma adição** — exemplo concreto ancorando alegação abstrata sobre o funcionamento de um mecanismo.
 - **verbosity-reduction** — remove Verbosity Compensation: spans compressíveis sem perda de informação que sobrevivem na resposta como compensação de incerteza interna do modelo.
 - **pt-br-fullness** — preserva os elementos morfossintáticos e coesivos que o português brasileiro usa com mais frequência do que o inglês: artigos definidos, conectivos discursivos, regência verbal, pronomes oblíquos, modo subjuntivo, crase e pro-drop.
 
@@ -86,7 +86,7 @@ As três skills cobrem dimensões diferentes e raramente entram em conflito real
 Antes de finalizar a resposta, percorra a checklist condensada. Os primeiros dez itens valem para qualquer língua; os quatro últimos só se aplicam quando o texto for pt-BR.
 
 1. Há fechamento aforístico no final do parágrafo que não acrescenta informação? (sober-prose #1)
-2. Há construções "X é Y, não Z" desnecessárias ou fragmentos imitando antítese? (sober-prose #2, #7, #10)
+2. Há construções "X é Y, não Z" — desnecessárias (deletar) ou com metade negativa delimitadora (converter em afirmação positiva) — ou fragmentos imitando antítese? (sober-prose #2, #7, #10)
 3. Há jargão técnico usado cru sem desdobramento prévio em prosa? (sober-prose #11)
 4. Há metáfora em posição definicional cujo domínio-fonte (estatística, geologia, mecânica, biologia) importa um frame inferencial que não casa com o conceito sendo definido? (sober-prose #12)
 5. Há aspas decorativas (scare quotes) em torno de uma palavra que pediria termo mais preciso ou compromisso sem hedging tipográfico? (sober-prose #13)

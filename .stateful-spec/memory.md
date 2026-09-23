@@ -8,12 +8,16 @@
 - **Nome:** skills
 - **Descrição:** repositório zero-code de Agent Skills (extensões em Markdown)
   voltadas a fidelidade linguística e qualidade de prosa.
-- **Última atualização:** 2026-07-04
+- **Última atualização:** 2026-09-22
 - **Status:** Active development
 
 ## Active Work
 
-- _(nenhuma iteração ativa)_
+- **009-sentencas-negativas** (in-progress, fase Verificar — revisão pós-rascunho
+  aplicada): tratar sentenças argumentativas por negação em outputs de IAs
+  generativas — evolução do par `prosa-sobria`/`sober-prose` (sub-variante
+  "negação com conteúdo" no anti-padrão #2). Ver
+  [history/009-sentencas-negativas.md](history/009-sentencas-negativas.md).
 
 _(candidatas futuras: colher os sinais ex post da seção 9 do
 `persona-reference.md`; contraparte PT-BR da `readme-writer`; corrigir no doc
@@ -23,10 +27,14 @@ na fronteira de R1 e densidade da methodological-rigor)_
 
 ## Open Session
 
-- **2026-07-04** — sessão retomada para fechamento da iteração 008
-  (`revisar-catalogo`): usuário validou as edições A1–A12; iteração marcada
-  completed e movida para Recent Completions; commit/PR preparados na branch
-  `update/revisar-catalogo`.
+- Sessão aberta em 2026-09-22 (`resume-session`): iteração 009 passou pelo ciclo
+  Analisar→Verificar; revisão externa (outra IA) verificada e aplicada (A1–A6);
+  branch `update/sentencas-negativas`. Falta fechar a iteração e persistir.
+
+## Próximo passo sugerido
+
+- Fechar a iteração 009: `/review-changes` do diff final, `/write-commit-message`
+  e PR (com autorização do usuário); depois `/end-session` com estado persistido.
 
 ## Recent Completions
 
@@ -123,3 +131,4 @@ na fronteira de R1 e densidade da methodological-rigor)_
 | 6  | readme-writer | chore | completed | [006-readme-writer.md](history/006-readme-writer.md) |
 | 7  | consolidar-readme-writer | new-skill | completed | [007-consolidar-readme-writer.md](history/007-consolidar-readme-writer.md) |
 | 8  | revisar-catalogo | skill-revision | completed | [008-revisar-catalogo.md](history/008-revisar-catalogo.md) |
+| 9  | sentencas-negativas | TBD (new-skill \| skill-revision) | in-progress | [009-sentencas-negativas.md](history/009-sentencas-negativas.md) |

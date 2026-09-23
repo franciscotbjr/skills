@@ -14,7 +14,7 @@ The AI agent activates the skill automatically when the conversation involves ex
 
 - Expository, technical, philosophical, or analytical responses
 - Any substantive response where rhetorical bias would undermine precision
-- Iterative editing of documents the user is reviewing paragraph by paragraph — the skill includes a "second pass" routine for residual aphoristic closings (including the prescriptive/admonitory subtype), sentence-fragment antitheses, bare jargon, and expanded sub-variants of the "X is not Y" construction (appositive negation, adverbial negation + contrast, dash + antithesis)
+- Iterative editing of documents the user is reviewing paragraph by paragraph — the skill includes a "second pass" routine for residual aphoristic closings (including the prescriptive/admonitory subtype), sentence-fragment antitheses, bare jargon, and expanded sub-variants of the "X is not Y" construction (appositive negation, adverbial negation + contrast, dash + antithesis, delimiting negation with content converted into a positive statement)
 
 ## When it does not apply
 
